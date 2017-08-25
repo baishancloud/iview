@@ -10,7 +10,7 @@
 <script>
     import Icon from '../icon';
     import { oneOf } from '../../utils/assist';
-    const prefixCls = 'ivu-tag';
+    const prefixCls = 'bsc-tag';
     const initColorList = ['blue', 'green', 'red', 'yellow', 'default'];
     export default {
         name: 'Tag',

@@ -9,7 +9,7 @@
                     ></render-cell>
                 </div>
                 <a :class="[baseClass + '-close']" @click="close" v-if="closable">
-                    <i class="ivu-icon ivu-icon-ios-close-empty"></i>
+                    <i class="bsc-icon bsc-icon-ios-close-empty"></i>
                 </a>
             </template>
             <template v-if="type === 'message'">
@@ -21,7 +21,7 @@
                         ></render-cell>
                     </div>
                     <a :class="[baseClass + '-close']" @click="close" v-if="closable">
-                        <i class="ivu-icon ivu-icon-ios-close-empty"></i>
+                        <i class="bsc-icon bsc-icon-ios-close-empty"></i>
                     </a>
                 </div>
             </template>
@@ -160,7 +160,7 @@
             }
 
             // check if with desc in Notice component
-            if (this.prefixCls === 'ivu-notice') {
+            if (this.prefixCls === 'bsc-notice') {
                 let desc = this.$refs.content.querySelectorAll(`.${this.prefixCls}-desc`)[0];
                 this.withDesc = this.render ? true : (desc ? desc.innerHTML !== '' : false);
             }

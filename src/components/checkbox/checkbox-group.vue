@@ -6,8 +6,7 @@
 <script>
     import { findComponentsDownward, oneOf } from '../../utils/assist';
     import Emitter from '../../mixins/emitter';
-
-    const prefixCls = 'ivu-checkbox-group';
+    const prefixCls = 'bsc-checkbox-group';
 
     export default {
         name: 'CheckboxGroup',

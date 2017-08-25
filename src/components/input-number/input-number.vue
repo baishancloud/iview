@@ -37,8 +37,8 @@
     import { oneOf } from '../../utils/assist';
     import Emitter from '../../mixins/emitter';
 
-    const prefixCls = 'ivu-input-number';
-    const iconPrefixCls = 'ivu-icon';
+    const prefixCls = 'bsc-input-number';
+    const iconPrefixCls = 'bsc-icon';
 
     function addNum (num1, num2) {
         let sq1, sq2, m;

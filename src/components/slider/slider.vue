@@ -85,7 +85,7 @@
     import { on, off } from '../../utils/dom';
     import Emitter from '../../mixins/emitter';
 
-    const prefixCls = 'ivu-slider';
+    const prefixCls = 'bsc-slider';
 
     export default {
         name: 'Slider',

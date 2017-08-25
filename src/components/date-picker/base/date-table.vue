@@ -22,7 +22,7 @@
     import jsCalendar from 'js-calendar';
 
     import mixin from './mixin';
-    import prefixCls from './prefixCls';
+    const prefixCls = 'bsc-date-picker-cells';
 
 
     export default {

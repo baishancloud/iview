@@ -75,7 +75,7 @@
     import { DEFAULT_FORMATS, TYPE_VALUE_RESOLVER_MAP } from './util';
     import Emitter from '../../mixins/emitter';
 
-    const prefixCls = 'ivu-date-picker';
+    const prefixCls = 'bsc-date-picker';
 
     const isEmptyArray = val => val.reduce((isEmpty, str) => isEmpty && !str || (typeof str === 'string' && str.trim() === ''), true);
 

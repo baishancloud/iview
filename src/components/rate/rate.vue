@@ -17,7 +17,7 @@
     import Locale from '../../mixins/locale';
     import Emitter from '../../mixins/emitter';
 
-    const prefixCls = 'ivu-rate';
+    const prefixCls = 'bsc-rate';
 
     export default {
         name: 'Rate',

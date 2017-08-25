@@ -30,7 +30,7 @@
     import Emitter from '../../mixins/emitter';
     import elementResizeDetectorMaker from 'element-resize-detector';
 
-    const prefixCls = 'ivu-tabs';
+    const prefixCls = 'bsc-tabs';
 
     export default {
         name: 'Tabs',

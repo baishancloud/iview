@@ -14,7 +14,7 @@
     import { clearHours } from '../util';
     import { deepCopy } from '../../../utils/assist';
     import mixin from './mixin';
-    import prefixCls from './prefixCls';
+    const prefixCls = 'bsc-date-picker-cells';
 
     export default {
         mixins: [ mixin ],

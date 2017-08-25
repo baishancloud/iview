@@ -14,7 +14,7 @@
 </template>
 <script>
     // todo 3.0 时废弃 href
-    const prefixCls = 'ivu-breadcrumb-item';
+    const prefixCls = 'bsc-breadcrumb-item';
 
     export default {
         name: 'BreadcrumbItem',

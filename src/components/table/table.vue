@@ -98,7 +98,7 @@
     import Locale from '../../mixins/locale';
     import elementResizeDetectorMaker from 'element-resize-detector';
 
-    const prefixCls = 'ivu-table';
+    const prefixCls = 'bsc-table';
 
     let rowKey = 1;
     let columnKey = 1;

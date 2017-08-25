@@ -7,7 +7,7 @@
     import { oneOf, findComponentsDownward } from '../../utils/assist';
     import Emitter from '../../mixins/emitter';
 
-    const prefixCls = 'ivu-radio-group';
+    const prefixCls = 'bsc-radio-group';
 
     let seed = 0;
     const now = Date.now();

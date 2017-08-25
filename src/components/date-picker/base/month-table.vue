@@ -16,7 +16,7 @@
     import { deepCopy } from '../../../utils/assist';
     import Locale from '../../../mixins/locale';
     import mixin from './mixin';
-    import prefixCls from './prefixCls';
+    const prefixCls = 'bsc-date-picker-cells';
 
     export default {
         mixins: [ Locale, mixin ],
