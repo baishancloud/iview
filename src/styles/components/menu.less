@@ -141,6 +141,7 @@
     &-vertical &-item,
     &-vertical &-submenu-title
     {
+        text-align: left;
         padding: 14px 24px;
         position: relative;
         cursor: pointer;
@@ -149,6 +150,11 @@
 
         &:hover{
             background: @background-color-select-hover;
+        }
+
+        .icon-menu {
+            margin-top: 4px;
+            padding-right: 6px;
         }
     }
 
@@ -220,7 +226,6 @@
         &-active,&-active:hover{
             border-right: none;
             color: #fff;
-            background: @primary-color !important;
         }
     }
     // &-dark&-vertical &-item-active &-submenu-title{
