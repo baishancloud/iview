@@ -2,6 +2,7 @@
 @spin-dot-size-small: 12px;
 @spin-dot-size: 20px;
 @spin-dot-size-large: 32px;
+@spin-dot-size-bigger: 44px;
 
 .@{spin-prefix-cls} {
     color: @primary-color;
@@ -23,6 +24,10 @@
 
     &-small &-dot {
         .square(@spin-dot-size-small);
+    }
+
+    &-bigger &-dot {
+        .square(@spin-dot-size-bigger);
     }
 
     &-fix {

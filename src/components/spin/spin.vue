@@ -20,7 +20,7 @@
         props: {
             size: {
                 validator (value) {
-                    return oneOf(value, ['small', 'large']);
+                    return oneOf(value, ['small', 'large', 'bigger']);
                 }
             },
             fix: {
