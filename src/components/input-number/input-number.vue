@@ -81,7 +81,6 @@
                 default: 1
             },
             value: {
-                type: Number,
                 default: 1
             },
             size: {
