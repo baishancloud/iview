@@ -6,6 +6,7 @@
 <script>
     import { findComponentUpward } from '../../utils/assist';
     const prefixCls = 'bsc-col';
+    import { findComponentUpward } from '../../utils/assist';
 
     export default {
         name: 'iCol',
