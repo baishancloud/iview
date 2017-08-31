@@ -18,10 +18,18 @@
 > This branch is for Vue.js 2.x.
 >
 > The branch for Vue.js 1.x can be found [here](https://github.com/iview/iview/tree/master).
+# iview-bsc
+
+## Notes
+
+- 将本地 ssh 密钥(~/.ssh/id_rsa.pub)添加到 github 的设置中 
+- 拉取代码，使用 ssh 的方式
+- 安装项目依赖并启动开发环境 (npm run dev, 其他命令查看 package.json)
+
+控件源码在 src\ 目录下，如果新增控件需要在index 中引入，examples\ 下的文件是开发测试用，可以根据开发测试需求随便改(不需提交)
 
 ## Docs
 
-### [English (2.0)](https://www.iviewui.com)
 ### [中文文档 (2.0)](https://www.iviewui.com)
 [中文文档 (1.0)](http://v1.iviewui.com)
 
