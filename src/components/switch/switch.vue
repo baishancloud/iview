@@ -34,6 +34,10 @@
                 type: [String, Number, Boolean],
                 default: false
             },
+            onlyText: {
+                type: Boolean,
+                default: false
+            },
             disabled: {
                 type: Boolean,
                 default: false
@@ -54,8 +58,9 @@
         },
         computed: {
             wrapClasses () {
+                let prefix = this.onlyText ? `${prefixCls}-only-text` : prefixCls;
                 return [
-                    `${prefixCls}`,
+                    `${prefix}`,
                     {
                         [`${prefixCls}-checked`]: this.currentValue === this.trueValue,
                         [`${prefixCls}-disabled`]: this.disabled,
@@ -64,7 +69,7 @@
                 ];
             },
             innerClasses () {
-                return `${prefixCls}-inner`;
+                return !this.onlyText ? `${prefixCls}-inner` : `${prefixCls}-only-text-inner`;
             }
         },
         methods: {
