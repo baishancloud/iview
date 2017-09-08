@@ -4,14 +4,15 @@
             :class="selectionCls"
             ref="reference"
             @click="toggleMenu">
+            <div :class="[prefixCls + '-prepend']" v-if="prepend"><slot name="prepend"></slot></div>
             <slot name="input">
                 <input type="hidden" :name="name" :value="model">
                 <div class="bsc-tag bsc-tag-checked" v-for="(item, index) in selectedMultiple">
                     <span class="bsc-tag-text">{{ item.label }}</span>
                     <Icon type="ios-close-empty" @click.native.stop="removeTag(index)"></Icon>
                 </div>
-                <span :class="[prefixCls + '-placeholder']" v-show="showPlaceholder && !filterable">{{ localePlaceholder }}</span>
                 <span :class="[prefixCls + '-selected-value']" v-show="!showPlaceholder && !multiple && !filterable">{{ selectedSingle }}</span>
+                <span :class="[prefixCls + '-placeholder']" v-show="showPlaceholder && !filterable">{{ localePlaceholder }}</span>
                 <input
                     :id="elementId"
                     type="text"
@@ -128,6 +129,10 @@
                 default: 'bottom'
             },
             transfer: {
+                type: Boolean,
+                default: false
+            },
+            prepend: {
                 type: Boolean,
                 default: false
             },
