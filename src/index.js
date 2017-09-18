@@ -14,6 +14,7 @@ import Circle from './components/circle';
 import Collapse from './components/collapse';
 import ColorPicker from './components/color-picker';
 import Content from './components/content';
+import ColorPickerInput from './components/color-picker-input';
 import DatePicker from './components/date-picker';
 import Dropdown from './components/dropdown';
 import Footer from './components/footer';
@@ -73,6 +74,7 @@ const components = {
     Collapse,
     ColorPicker,
     Content: Content,
+    ColorPickerInput,
     DatePicker,
     Dropdown,
     DropdownItem: Dropdown.Item,

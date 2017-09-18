@@ -196,6 +196,10 @@ const router = new VueRouter({
             component: (resolve) => require(['./routers/color-picker.vue'], resolve)
         },
         {
+            path: '/color-picker-input',
+            component: require('./routers/color-picker-input.vue')
+        },
+        {
             path: '/auto-complete',
             component: (resolve) => require(['./routers/auto-complete.vue'], resolve)
         },

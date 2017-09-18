@@ -60,6 +60,7 @@ nav {
                 <li><router-link to="/notice">Notice</router-link></li>
                 <li><router-link to="/avatar">Avatar</router-link></li>
                 <li><router-link to="/color-picker">ColorPicker</router-link></li>
+                <li><router-link to="/color-picker-input">ColorPickerInput</router-link></li>
                 <li><router-link to="/auto-complete">AutoComplete</router-link></li>
                 <li><router-link to="/scroll">Scroll</router-link></li>
             </ul>
