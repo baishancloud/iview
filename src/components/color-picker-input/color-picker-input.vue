@@ -57,6 +57,9 @@ export default {
         
     },
     watch: {
+        value (val) {
+            this.currentValue = val;
+        },
         currentValue (color) {
             this.$emit('input', color);
         }

@@ -1,6 +1,7 @@
 <template>
     <div style="margin: 100px;">
         {{ color }}
+        <Button @click="setColor">set color</Button>
         <color-picker-input v-model="color" placement="bottom-start" size="large"></color-picker-input>
     </div>
 </template>
@@ -14,6 +15,9 @@
         },
         computed: {},
         methods: {
+            setColor () {
+                this.color = '#26bc77';
+            }
         }
     };
 </script>
