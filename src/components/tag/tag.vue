@@ -30,7 +30,10 @@
             },
             color: {
                 type: String,
-                default: 'default'
+                default: 'default',
+                validator (value) {
+                    return oneOf(value, ['blue', 'green', 'red', 'yellow', 'default']);
+                }
             },
             type: {
                 validator (value) {

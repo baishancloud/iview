@@ -41,6 +41,7 @@
 ## Features
 
 - Dozens of useful and beautiful components.
+<<<<<<< HEAD
 - Friendly API. It's made for people with any skill level.
 - Extensive documentation and demos.
 - It is quite beautiful.
@@ -62,6 +63,18 @@
 > Please install Webpack first!
 
 We recommend you create your project through [iView Cli](https://github.com/iview/iview-cli) or [iview-project](https://github.com/iview/iview-project). You can also use [vue-cli](https://github.com/vuejs/vue-cli).
+=======
+- Friendly API. It's made for people with all skill levels.
+- Extensive documentation and demos.
+- It is quite beautiful.
+- Supports Vue.js 2 and Vue.js 1.
+
+## Install
+
+> Please install Webpack first
+
+We recommend you install project through [iView Cli](https://github.com/iview/iview-cli) Or [iview-project](https://github.com/iview/iview-project). You can also use [vue-cli](https://github.com/vuejs/vue-cli).
+>>>>>>> Squashed commit of the following:
 
 ### Install iView
 
@@ -69,15 +82,23 @@ Using npm:
 ```
 npm install iview --save
 ```
+<<<<<<< HEAD
 
 Using a script tag for global use:
+=======
+Or using script tag for global use
+>>>>>>> Squashed commit of the following:
 
 ```html
 <script type="text/javascript" src="iview.min.js"></script>
 <link rel="stylesheet" href="dist/styles/iview.css">
 ```
 
+<<<<<<< HEAD
 You can find more info [on the website](https://www.iviewui.com/docs/guide/install-en).
+=======
+More info [in the website](https://www.iviewui.com/docs/guide/install-en)
+>>>>>>> Squashed commit of the following:
 
 ## Usage
 
@@ -104,6 +125,7 @@ import 'iview/dist/styles/iview.css';
 
 ## Compatibility
 
+<<<<<<< HEAD
 - Supports Vue.js 2.x
 - Supports Vue.js 1.x - [visit 1.0 docs](http://v1.iviewui.com/)
 - Supports SSR
@@ -118,6 +140,22 @@ If you want to contribute or have questions or bugs to report:
 **Questions:** Find other users at the [Gitter chat](https://gitter.im/iview/iview) or post on [StackOverflow using `[iview-ui]` tag](https://stackoverflow.com/questions/tagged/iview-ui)  
 **Bugs:** [File a issue here](https://github.com/iview/iview/issues) - please provide a example so we can help you better  
 **Contribute:** Contact us in [Gitter chat](https://gitter.im/iview/iview), WeChat or via mail to `admin@aresn.com`. PRs welcome!
+=======
+- Support Vue.js 2.x
+- Support Vue.js 1.x [Visit 1.0 doc](http://v1.iviewui.com/)
+- Support SSR
+- Support [Nuxt.js](https://nuxtjs.org/)
+- [Electron](http://electron.atom.io/)
+- iView does not support IE8 or below since [Vue.js](https://vuejs.org/v2/guide/reactivity.html) is using Object.defineProperty which do not be supported by these browsers to track changes.
+
+## Community
+
+If you want to contribute, have questions or bugs to report:
+
+**Questions:** you can find other users at [Gitter chat](https://gitter.im/iview/iview) or post on [StackOverflow using `[iview-ui]` tag](https://stackoverflow.com/questions/tagged/iview-ui)  
+**Bugs:** [file a issue here](https://github.com/iview/iview/issues) and please provide a example so we can help you better  
+**Contribute:** welcome to contact us in [Gitter chat](https://gitter.im/iview/iview), WeChat or via mail to `admin@aresn.com`. PRs welcome!
+>>>>>>> Squashed commit of the following:
 
 ## Major Contributors
 |Name|Avatar|Name|Avatar|Name|Avatar|

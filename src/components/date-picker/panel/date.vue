@@ -196,6 +196,12 @@
                 this.date = siblingMonth(this.date, dir);
                 this.setMonthYear(this.date);
             },
+            showYearPicker () {
+                this.currentView = 'year';
+            },
+            showMonthPicker () {
+                this.currentView = 'month';
+            },
             handleToggleTime () {
                 if (this.currentView === 'date') {
                     this.currentView = 'time';
