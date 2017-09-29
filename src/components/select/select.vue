@@ -13,6 +13,7 @@
                 </div>
                 <span :class="[prefixCls + '-selected-value']" v-show="!showPlaceholder && !multiple && !filterable">{{ selectedSingle }}</span>
                 <span :class="[prefixCls + '-placeholder']" v-show="showPlaceholder && !filterable">{{ localePlaceholder }}</span>
+                <input type="hidden" :name="name" :value="model">
                 <input
                     :id="elementId"
                     type="text"
