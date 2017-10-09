@@ -175,7 +175,6 @@
 
             return {
                 prefixCls: prefixCls,
-                showClose: false,
                 visible: false,
                 internalValue: initialValue,
                 disableClickOutSide: false,    // fixed when click a date,trigger clickoutside to close picker
@@ -208,7 +207,6 @@
             iconType () {
                 let icon = 'ios-calendar-outline';
                 if (this.type === 'time' || this.type === 'timerange') icon = 'ios-clock-outline';
-                if (this.showClose) icon = 'ios-close';
                 return icon;
             },
             transition () {
@@ -280,17 +278,9 @@
             },
             handleInputMouseenter () {
                 if (this.readonly || this.disabled) return;
-                if (this.visualValue && this.clearable) {
-                    this.showClose = true;
-                }
-            },
-            handleInputMouseleave () {
-                this.showClose = false;
             },
             handleIconClick () {
-                if (this.showClose) {
-                    this.handleClear();
-                } else if (!this.disabled) {
+                if (!this.disabled) {
                     this.handleFocus();
                 }
             },
