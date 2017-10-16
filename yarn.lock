@@ -23,18 +23,6 @@ abbrev@1.0.x:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.0.9.tgz#91b4792588a7738c25f35dd6f63752a2f8776135"
 
-<<<<<<< HEAD
-accepts@~1.3.4:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.3.5.tgz#eb777df6011723a3b14e8a72c0805c8e86746bd2"
-  dependencies:
-    mime-types "~2.1.18"
-    negotiator "0.6.1"
-
-accord@^0.29.0:
-  version "0.29.0"
-  resolved "https://registry.yarnpkg.com/accord/-/accord-0.29.0.tgz#b741c176d00435c5929d466dfe8cf6bee933b1e4"
-=======
 accepts@1.3.3:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.3.3.tgz#c3ca7434938648c3e0d9c1e328dd68b622c284ca"
@@ -45,7 +33,6 @@ accepts@1.3.3:
 accord@^0.27.3:
   version "0.27.3"
   resolved "https://registry.yarnpkg.com/accord/-/accord-0.27.3.tgz#7fb9129709285caea84eb372c4e882031b7138e8"
->>>>>>> css md
   dependencies:
     convert-source-map "^1.5.0"
     glob "^7.0.5"
@@ -89,19 +76,9 @@ acorn@^4.0.3:
   version "4.0.11"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.11.tgz#edcda3bd937e7556410d42ed5860f67399c794c0"
 
-<<<<<<< HEAD
-acorn@^5.0.0, acorn@^5.2.1, acorn@^5.4.1, acorn@^5.5.0:
-  version "5.5.3"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.5.3.tgz#f473dd47e0277a08e28e9bec5aeeb04751f0b8c9"
-
-addressparser@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/addressparser/-/addressparser-1.0.1.tgz#47afbe1a2a9262191db6838e4fd1d39b40821746"
-=======
 acorn@^5.0.0:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.1.1.tgz#53fe161111f912ab999ee887a90a0bc52822fd75"
->>>>>>> css md
 
 after@0.8.2:
   version "0.8.2"
@@ -118,13 +95,6 @@ ajv-keywords@^1.0.0:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-1.5.1.tgz#314dd0a4b3368fad3dfcdc54ede6171b886daf3c"
 
-<<<<<<< HEAD
-ajv-keywords@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-3.1.0.tgz#ac2b27939c543e95d2c06e7f7f5c27be4aa543be"
-
-=======
->>>>>>> css md
 ajv@^4.7.0, ajv@^4.9.1:
   version "4.11.5"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-4.11.5.tgz#b6ee74657b993a01dce44b7944d56f485828d5bd"
@@ -132,15 +102,9 @@ ajv@^4.7.0, ajv@^4.9.1:
     co "^4.6.0"
     json-stable-stringify "^1.0.1"
 
-<<<<<<< HEAD
-ajv@^5.0.0, ajv@^5.1.0:
-  version "5.5.2"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-5.5.2.tgz#73b5eeca3fab653e3d3f9422b341ad42205dc965"
-=======
 ajv@^5.0.0:
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-5.2.2.tgz#47c68d69e86f5d953103b0074a9430dc63da5e39"
->>>>>>> css md
   dependencies:
     co "^4.6.0"
     fast-deep-equal "^1.0.0"
@@ -323,24 +287,6 @@ array-flatten@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-2.1.1.tgz#426bb9da84090c1838d812c8150af20a8331e296"
 
-<<<<<<< HEAD
-array-includes@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/array-includes/-/array-includes-3.0.3.tgz#184b48f62d92d7452bb31b323165c7f8bd02266d"
-  dependencies:
-    define-properties "^1.1.2"
-    es-abstract "^1.7.0"
-
-array-map@~0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/array-map/-/array-map-0.0.0.tgz#88a2bab73d1cf7bcd5c1b118a003f66f665fa662"
-
-array-reduce@~0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/array-reduce/-/array-reduce-0.0.0.tgz#173899d3ffd1c7d9383e4479525dbe278cab5f2b"
-
-=======
->>>>>>> css md
 array-slice@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/array-slice/-/array-slice-0.2.3.tgz#dd3cfb80ed7973a75117cdac69b0b99ec86186f5"
@@ -512,21 +458,9 @@ aws4@^1.2.1, aws4@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
 
-<<<<<<< HEAD
-axios@^0.15.3:
-  version "0.15.3"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.15.3.tgz#2c9d638b2e191a08ea1d6cc988eadd6ba5bdc053"
-  dependencies:
-    follow-redirects "1.0.0"
-
-babel-cli@^6.26.0:
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/babel-cli/-/babel-cli-6.26.0.tgz#502ab54874d7db88ad00b887a06383ce03d002f1"
-=======
 babel-code-frame@^6.16.0:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-code-frame/-/babel-code-frame-6.22.0.tgz#027620bee567a88c32561574e7fd0801d33118e4"
->>>>>>> css md
   dependencies:
     chalk "^1.1.3"
     esutils "^2.0.2"
@@ -923,29 +857,9 @@ babel-plugin-transform-strict-mode@^6.24.1:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
 
-<<<<<<< HEAD
-babel-plugin-transform-vue-jsx@^3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-vue-jsx/-/babel-plugin-transform-vue-jsx-3.7.0.tgz#d40492e6692a36b594f7e9a1928f43e969740960"
-  dependencies:
-    esutils "^2.0.2"
-
-babel-polyfill@^6.26.0:
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz#379937abc67d7895970adc621f284cd966cf2153"
-  dependencies:
-    babel-runtime "^6.26.0"
-    core-js "^2.5.0"
-    regenerator-runtime "^0.10.5"
-
-babel-preset-env@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/babel-preset-env/-/babel-preset-env-1.6.1.tgz#a18b564cc9b9afdf4aae57ae3c1b0d99188e6f48"
-=======
 babel-preset-es2015@^6.24.1:
   version "6.24.1"
   resolved "https://registry.yarnpkg.com/babel-preset-es2015/-/babel-preset-es2015-6.24.1.tgz#d44050d6bc2c9feea702aaf38d727a0210538939"
->>>>>>> css md
   dependencies:
     babel-plugin-check-es2015-constants "^6.22.0"
     babel-plugin-syntax-trailing-function-commas "^6.22.0"
@@ -1406,15 +1320,9 @@ buffer-indexof@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/buffer-indexof/-/buffer-indexof-1.1.1.tgz#52fabcc6a606d1a00302802648ef68f639da268c"
 
-<<<<<<< HEAD
-buffer-more-ints@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/buffer-more-ints/-/buffer-more-ints-0.0.2.tgz#26b3885d10fa13db7fc01aae3aab870199e0124c"
-=======
 buffer-shims@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/buffer-shims/-/buffer-shims-1.0.0.tgz#9978ce317388c649ad8793028c3477ef044a8b51"
->>>>>>> css md
 
 buffer-xor@^1.0.3:
   version "1.0.3"
@@ -1623,19 +1531,9 @@ change-case@3.0.x:
     upper-case "^1.1.1"
     upper-case-first "^1.1.0"
 
-<<<<<<< HEAD
-check-error@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/check-error/-/check-error-1.0.2.tgz#574d312edd88bb5dd8912e9286dd6c0aed4aac82"
-
-chokidar@^1.4.1, chokidar@^1.6.1:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.7.0.tgz#798e689778151c8076b4b360e5edd28cda2bb468"
-=======
 chokidar@^1.4.1, chokidar@^1.6.0:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.6.1.tgz#2f4447ab5e96e50fb3d789fd90d4c72e0e4c70c2"
->>>>>>> css md
   dependencies:
     anymatch "^1.3.0"
     async-each "^1.0.0"
@@ -1648,15 +1546,9 @@ chokidar@^1.4.1, chokidar@^1.6.0:
   optionalDependencies:
     fsevents "^1.0.0"
 
-<<<<<<< HEAD
-chokidar@^2.0.0, chokidar@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.0.2.tgz#4dc65139eeb2714977735b6a35d06e97b494dfd7"
-=======
 chokidar@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.7.0.tgz#798e689778151c8076b4b360e5edd28cda2bb468"
->>>>>>> css md
   dependencies:
     anymatch "^1.3.0"
     async-each "^1.0.0"
@@ -1904,6 +1796,13 @@ compression-webpack-plugin@^1.1.10:
     find-cache-dir "^1.0.0"
     neo-async "^2.5.0"
     serialize-javascript "^1.4.0"
+    webpack-sources "^1.0.1"
+
+compression-webpack-plugin@^1.0.1:
+  version "1.0.1"
+  resolved "http://registry.npm.taobao.org/compression-webpack-plugin/download/compression-webpack-plugin-1.0.1.tgz#7f0a2af9f642b4f87b5989516a3b9e9b41bb4b3f"
+  dependencies:
+    async "2.4.1"
     webpack-sources "^1.0.1"
 
 compression@^1.5.2:
@@ -2248,11 +2147,6 @@ de-indent@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/de-indent/-/de-indent-1.0.2.tgz#b2038e846dc33baa5796128d0804b455b8c1e21d"
 
-<<<<<<< HEAD
-debug@2, debug@2.6.9, debug@^2.1.1, debug@^2.2.0, debug@^2.3.3, debug@^2.6.6, debug@^2.6.8, debug@~2.6.4, debug@~2.6.6:
-  version "2.6.9"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
-=======
 debug@2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.2.0.tgz#f87057e995b1a1f6ae6a4960664137bc56f039da"
@@ -2280,7 +2174,6 @@ debug@2.6.8, debug@^2.6.6, debug@^2.6.8:
 debug@^2.1.1, debug@^2.2.0:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.3.tgz#0f7eb8c30965ec08c72accfa0130c8b79984141d"
->>>>>>> css md
   dependencies:
     ms "2.0.0"
 
@@ -2322,15 +2215,9 @@ deep-is@~0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
 
-<<<<<<< HEAD
-deepmerge@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-2.1.0.tgz#511a54fff405fc346f0240bb270a3e9533a31102"
-=======
 deepmerge@^1.5.0:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-1.5.1.tgz#c053bf06fd7276f1994f70c09a0760cb61a56237"
->>>>>>> css md
 
 defaults@^1.0.0:
   version "1.0.3"
@@ -2468,15 +2355,9 @@ di@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/di/-/di-0.0.1.tgz#806649326ceaa7caa3306d75d985ea2748ba913c"
 
-<<<<<<< HEAD
-diff@3.5.0, diff@^3.1.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
-=======
 diff@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-3.2.0.tgz#c9ce393a4b7cbd0b058a725c93df299027868ff9"
->>>>>>> css md
 
 diffie-hellman@^5.0.0:
   version "5.0.2"
@@ -2503,9 +2384,6 @@ dns-txt@^2.0.2:
   dependencies:
     buffer-indexof "^1.0.0"
 
-<<<<<<< HEAD
-doctrine@^2.0.0, doctrine@^2.0.2:
-=======
 dns-equal@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/dns-equal/-/dns-equal-1.0.0.tgz#b39e7f1da6eb0a75ba9c17324b34753c47e0654d"
@@ -2524,7 +2402,6 @@ dns-txt@^2.0.2:
     buffer-indexof "^1.0.0"
 
 doctrine@^2.0.0:
->>>>>>> css md
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/doctrine/-/doctrine-2.1.0.tgz#5cd01fc101621b42c4cd7f5d1a66243716d3f39d"
   dependencies:
@@ -3142,22 +3019,6 @@ extglob@^0.3.1:
   dependencies:
     is-extglob "^1.0.0"
 
-<<<<<<< HEAD
-extglob@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/extglob/-/extglob-2.0.4.tgz#ad00fe4dc612a9232e8718711dc5cb5ab0285543"
-  dependencies:
-    array-unique "^0.3.2"
-    define-property "^1.0.0"
-    expand-brackets "^2.1.4"
-    extend-shallow "^2.0.1"
-    fragment-cache "^0.2.1"
-    regex-not "^1.0.0"
-    snapdragon "^0.8.1"
-    to-regex "^3.0.1"
-
-=======
->>>>>>> css md
 extract-text-webpack-plugin@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/extract-text-webpack-plugin/-/extract-text-webpack-plugin-2.1.2.tgz#756ef4efa8155c3681833fbc34da53b941746d6c"
@@ -3601,15 +3462,9 @@ glob2base@^0.0.12:
   dependencies:
     find-index "^0.1.1"
 
-<<<<<<< HEAD
-glob@7.1.2, glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.0, glob@^7.1.1, glob@^7.1.2:
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
-=======
 glob@7.1.1, glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.1.tgz#805211df04faaf1c63a3600306cdf5ade50b2ec8"
->>>>>>> css md
   dependencies:
     fs.realpath "^1.0.0"
     inflight "^1.0.4"
@@ -3637,8 +3492,6 @@ glob@^5.0.15:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-<<<<<<< HEAD
-=======
 "glob@~ 3.2.1":
   version "3.2.11"
   resolved "https://registry.yarnpkg.com/glob/-/glob-3.2.11.tgz#4a973f635b9190f715d10987d5c00fd2815ebe3d"
@@ -3646,7 +3499,6 @@ glob@^5.0.15:
     inherits "2"
     minimatch "0.3"
 
->>>>>>> css md
 glob@~3.1.21:
   version "3.1.21"
   resolved "https://registry.yarnpkg.com/glob/-/glob-3.1.21.tgz#d29e0a055dea5138f4d07ed40e8982e83c2066cd"
@@ -3758,14 +3610,6 @@ gulp-clean-css@^3.9.3:
     through2 "2.0.3"
     vinyl-sourcemaps-apply "0.2.1"
 
-<<<<<<< HEAD
-gulp-less@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/gulp-less/-/gulp-less-4.0.0.tgz#3c49deb96bdca913e436921ef792fb4c24296fcd"
-  dependencies:
-    accord "^0.29.0"
-    less "2.6.x || ^3.0.0"
-=======
 gulp-less@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/gulp-less/-/gulp-less-3.3.2.tgz#f6636adcc66150a8902719fa59963fc7f862a49a"
@@ -3773,7 +3617,6 @@ gulp-less@^3.3.2:
     accord "^0.27.3"
     gulp-util "^3.0.7"
     less "2.6.x || ^2.7.1"
->>>>>>> css md
     object-assign "^4.0.1"
     plugin-error "^0.1.2"
     replace-ext "^1.0.0"
@@ -4092,15 +3935,9 @@ html-minifier@^3.2.3, html-minifier@^3.5.8:
     relateurl "0.2.x"
     uglify-js "3.3.x"
 
-<<<<<<< HEAD
-html-webpack-plugin@^3.0.6:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-3.0.6.tgz#d35b0452aae129a8a9f3fac44a169a625d8cf3fa"
-=======
 html-webpack-plugin@^2.29.0:
   version "2.30.1"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-2.30.1.tgz#7f9c421b7ea91ec460f56527d78df484ee7537d5"
->>>>>>> css md
   dependencies:
     html-minifier "^3.2.3"
     loader-utils "^0.2.16"
@@ -4332,24 +4169,7 @@ inquirer@^0.12.0:
     strip-ansi "^3.0.0"
     through "^2.3.6"
 
-<<<<<<< HEAD
-insert-module-globals@^7.0.0:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/insert-module-globals/-/insert-module-globals-7.0.2.tgz#012c56baa7d3307a8b417d4ec5270cf9741c18f4"
-  dependencies:
-    JSONStream "^1.0.3"
-    combine-source-map "~0.7.1"
-    concat-stream "~1.5.1"
-    is-buffer "^1.1.0"
-    lexical-scope "^1.2.0"
-    process "~0.11.0"
-    through2 "^2.0.0"
-    xtend "^4.0.0"
-
-internal-ip@1.2.0:
-=======
 internal-ip@^1.2.0:
->>>>>>> css md
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/internal-ip/-/internal-ip-1.2.0.tgz#ae9fbf93b984878785d50a8de1b356956058cf5c"
   dependencies:
@@ -4377,15 +4197,9 @@ ip@^1.1.0, ip@^1.1.2, ip@^1.1.4, ip@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.5.tgz#bdded70114290828c0a039e72ef25f5aaec4354a"
 
-<<<<<<< HEAD
-ipaddr.js@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.6.0.tgz#e3fa357b773da619f26e95f049d055c72796f86b"
-=======
 ipaddr.js@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.2.0.tgz#8aba49c9192799585bdd643e0ccb50e8ae777ba4"
->>>>>>> css md
 
 is-absolute-url@^2.0.0:
   version "2.1.0"
@@ -4746,8 +4560,6 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
-<<<<<<< HEAD
-=======
 js-yaml@0.3.x:
   version "0.3.7"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-0.3.7.tgz#d739d8ee86461e54b354d6a7d7d1f2ad9a167f62"
@@ -4756,7 +4568,6 @@ js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
->>>>>>> css md
 js-yaml@3.x, js-yaml@^3.4.3, js-yaml@^3.5.1:
   version "3.11.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.11.0.tgz#597c1a8bd57152f26d622ce4117851a51f5ebaef"
@@ -4903,6 +4714,7 @@ karma-spec-reporter@^0.0.32:
     colors "^1.1.2"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 karma-webpack@^2.0.13:
   version "2.0.13"
   resolved "https://registry.yarnpkg.com/karma-webpack/-/karma-webpack-2.0.13.tgz#cf56e3056c15b7747a0bb2140fc9a6be41dd9f02"
@@ -4911,6 +4723,11 @@ karma-webpack@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/karma-webpack/-/karma-webpack-2.0.4.tgz#3e2d4f48ba94a878e1c66bb8e1ae6128987a175b"
 >>>>>>> css md
+=======
+karma-webpack@^2.0.5:
+  version "2.0.5"
+  resolved "http://registry.npm.taobao.org/karma-webpack/download/karma-webpack-2.0.5.tgz#4f56887e32cf4f9583391c2388415de06af06efd"
+>>>>>>> select prepend bugfix
   dependencies:
     async "^2.0.0"
     babel-runtime "^6.0.0"
@@ -5258,9 +5075,9 @@ lodash.templatesettings@^3.0.0:
 
 lodash.throttle@^4.1.1:
   version "4.1.1"
-  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+  resolved "http://registry.npm.taobao.org/lodash.throttle/download/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
 
-lodash.uniq@^4.3.0, lodash.uniq@^4.5.0:
+lodash.uniq@^4.3.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
@@ -7604,6 +7421,7 @@ signal-exit@^3.0.0:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 sinon-chai@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/sinon-chai/-/sinon-chai-3.0.0.tgz#d5cbd70fa71031edd96b528e0eed4038fcc99f29"
@@ -7612,6 +7430,11 @@ sinon-chai@^2.11.0:
   version "2.13.0"
   resolved "https://registry.yarnpkg.com/sinon-chai/-/sinon-chai-2.13.0.tgz#b9a42e801c20234bfc2f43b29e6f4f61b60990c4"
 >>>>>>> css md
+=======
+sinon-chai@^2.14.0:
+  version "2.14.0"
+  resolved "http://registry.npm.taobao.org/sinon-chai/download/sinon-chai-2.14.0.tgz#da7dd4cc83cd6a260b67cca0f7a9fdae26a1205d"
+>>>>>>> select prepend bugfix
 
 sinon@^4.4.2:
   version "4.4.2"
@@ -8716,10 +8539,16 @@ vue-loader@^14.2.1:
     vue-style-loader "^2.0.0"
     vue-template-es2015-compiler "^1.2.2"
 
+<<<<<<< HEAD
 vue-router@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-2.7.0.tgz#16d424493aa51c3c8cce8b7c7210ea4c3a89aff1"
 >>>>>>> css md
+=======
+vue-router@^2.8.1:
+  version "2.8.1"
+  resolved "http://registry.npm.taobao.org/vue-router/download/vue-router-2.8.1.tgz#9833c9ee57ac83beb0269056fefee71713f20695"
+>>>>>>> select prepend bugfix
 
 vue-router@^3.0.1:
   version "3.0.1"
@@ -8732,16 +8561,26 @@ vue-style-loader@^4.0.1, vue-style-loader@^4.0.2:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-template-compiler@^2.4.1:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.4.2.tgz#5a45d843f148b098f6c1d1e35ac20c4956d30ad1"
+vue-template-compiler@^2.5.2:
+  version "2.5.2"
+  resolved "http://registry.npm.taobao.org/vue-template-compiler/download/vue-template-compiler-2.5.2.tgz#6f198ebc677b8f804315cd33b91e849315ae7177"
   dependencies:
     de-indent "^1.0.2"
     he "^1.1.0"
 
+<<<<<<< HEAD
 vue-template-es2015-compiler@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
+=======
+vue-template-es2015-compiler@^1.2.2:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.5.1.tgz#0c36cc57aa3a9ec13e846342cb14a72fcac8bd93"
+
+vue@^2.5.2:
+  version "2.5.2"
+  resolved "http://registry.npm.taobao.org/vue/download/vue-2.5.2.tgz#fd367a87bae7535e47f9dc5c9ec3b496e5feb5a4"
+>>>>>>> select prepend bugfix
 
 <<<<<<< HEAD
 vue@^2.5.13:
@@ -8796,10 +8635,16 @@ webpack-dev-middleware@^1.11.0:
     range-parser "^1.0.3"
     time-stamp "^2.0.0"
 
+<<<<<<< HEAD
 webpack-dev-server@^2.5.1:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-2.7.1.tgz#21580f5a08cd065c71144cf6f61c345bca59a8b8"
 >>>>>>> css md
+=======
+webpack-dev-server@^2.9.2:
+  version "2.9.2"
+  resolved "http://registry.npm.taobao.org/webpack-dev-server/download/webpack-dev-server-2.9.2.tgz#0fbab915701d25a905a60e1e784df19727da800f"
+>>>>>>> select prepend bugfix
   dependencies:
     ansi-html "0.0.7"
     bonjour "^3.5.0"
@@ -8845,6 +8690,7 @@ webpack-sources@^1.0.1:
     source-map "~0.5.3"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 webpack@^3.11.0:
   version "3.11.0"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.11.0.tgz#77da451b1d7b4b117adaf41a1a93b5742f24d894"
@@ -8853,6 +8699,11 @@ webpack@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-2.7.0.tgz#b2a1226804373ffd3d03ea9c6bd525067034f6b1"
 >>>>>>> css md
+=======
+webpack@^3.7.1:
+  version "3.7.1"
+  resolved "http://registry.npm.taobao.org/webpack/download/webpack-3.7.1.tgz#6046b5c415ff7df7a0dc54c5b6b86098e8b952da"
+>>>>>>> select prepend bugfix
   dependencies:
     acorn "^5.0.0"
     acorn-dynamic-import "^2.0.0"
