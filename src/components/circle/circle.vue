@@ -59,12 +59,12 @@
             },
             circleSize () {
                 return {
-                    width: `${this.size}px`,
-                    height: `${this.size}px`
+                    width: `${this.size + this.hoverBorder * 2}px`,
+                    height: `${this.size + this.hoverBorder * 2}px`
                 };
             },
             radius () {
-                return 50 - this.strokeWidth / 2;
+                return 50 - this.strokeWidth / 2 - this.hoverBorder;
             },
             pathString () {
                 return `M 50,50 m 0,-${this.radius}

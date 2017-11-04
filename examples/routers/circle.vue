@@ -40,7 +40,7 @@
             :percent="75"
             stroke-linecap="square"
             stroke-color="#43a300"
-            :hoverBorder="5">
+            :hoverBorder="10">
         <div class="demo-circle-custom">
             <h1>{{ 42001776 }}</h1>
             <p>消费人群规模</p>
