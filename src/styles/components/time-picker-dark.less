@@ -6,44 +6,6 @@
 @time-picker-cells-width-with-date: @time-picker-cells-width-with-date-base * 2;
 @time-picker-cells-width-with-date-with-seconds: @time-picker-cells-width-with-date-base * 3;
 
-.dark .@{time-picker-prefix-cls} {
-    &-cells{
-        &-list{
-            border-color: @border-color-split-dark;
-            ul{
-                li{
-                    color: #c0ccda;
-                    transition: background @transition-time @ease-in-out;
-                }
-            }
-        }
-        &-cell{
-            &:hover{
-                background: @background-color-select-hover-dark;
-            }
-            &-selected ,&-selected:hover{
-                color: #c0ccda;
-                background: @background-color-select-hover-dark;
-            }
-        }
-    }
-
-    &-header{
-        color: #c0ccda;
-        border-bottom: 1px solid @border-color-split-dark;
-    }
-
-    &-with-range{
-        .@{picker-prefix-cls}-panel{
-            &-content{
-                &:after{
-                    background: @border-color-split-dark;
-                }
-            }
-        }
-    }
-}
-
 .@{time-picker-prefix-cls} {
     &-cells{
         min-width: @time-picker-cells-width;
@@ -105,7 +67,7 @@
                 }
             }
             &-selected ,&-selected:hover{
-                color: @primary-color;
+                color: #fff;
                 background: @background-color-select-hover;
             }
         }

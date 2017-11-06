@@ -4,6 +4,16 @@
 @tooltip-arrow-width: 5px;
 @tooltip-distance: @tooltip-arrow-width - 1 + 4;
 
+.dark .@{tooltip-prefix-cls} {
+    &-popper{
+        .popper(@tooltip-arrow, @tooltip-arrow-width, @tooltip-distance, @tooltip-bg-dark);
+    }
+
+    &-inner{
+        background-color: @tooltip-bg-dark;
+    }
+}
+
 .@{tooltip-prefix-cls} {
     display: inline-block;
 

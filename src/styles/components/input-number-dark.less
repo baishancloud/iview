@@ -1,77 +1,9 @@
 @input-number-prefix-cls: ~"@{css-prefix}input-number";
 
-.handler-disabled-dark() {
-    opacity: 0.72;
-    color: #666 !important;
-    cursor: @cursor-disabled;
-}
-
 .handler-disabled() {
     opacity: 0.72;
     color: #ccc !important;
     cursor: @cursor-disabled;
-}
-
-.dark .@{input-number-prefix-cls} {
-    .input-dark;
-    width: 80px;
-    border: 1px solid @border-color-base-dark;
-
-    &-handler-wrap {
-        border-left: 1px solid @border-color-base-dark;
-        background: @input-bg-dark;
-    }
-
-    &-handler-down {
-        border-top: 1px solid @border-color-base-dark;
-    }
-
-    &-handler {
-        &:hover .@{input-number-prefix-cls}-handler-up-inner,
-        &:hover .@{input-number-prefix-cls}-handler-down-inner {
-            color: tint(@primary-color-blue, 20%);
-        }
-    }
-
-    &:hover {
-        .hover-dark();
-    }
-
-    &-focused {
-        .active-dark();
-    }
-
-    &-disabled {
-        .disabled-dark();
-    }
-
-    &-input {
-        background: @input-bg-dark;
-        color: @input-color-dark;
-
-        &[disabled] {
-            .disabled-dark();
-        }
-    }
-
-    &-handler-down-disabled,
-    &-handler-up-disabled,
-    &-disabled {
-        .@{input-number-prefix-cls}-handler-down-inner,
-        .@{input-number-prefix-cls}-handler-up-inner {
-            .handler-disabled-dark();
-        }
-    }
-
-    &-disabled {
-        .@{input-number-prefix-cls}-input {
-            background-color: @input-disabled-bg-dark;
-            color: @disabled-text-color-dark;
-        }
-        .@{input-number-prefix-cls}-handler {
-            .handler-disabled-dark();
-        }
-    }
 }
 
 .@{input-number-prefix-cls} {
@@ -93,7 +25,7 @@
         height: 100%;
         border-left: 1px solid @border-color-base;
         border-radius: @radius-wrap;
-        background: #fff;
+        background: @input-bg;
         position: absolute;
         top: 0;
         right: 0;
@@ -167,12 +99,13 @@
     &-input {
         width: 100%;
         height: @input-height-base;
+        background: @input-bg;
         line-height: @input-height-base;
         padding: 0 7px;
         text-align: left;
         outline: 0;
         -moz-appearance: textfield;
-        color: #666;
+        color: @input-color;
         border: 0;
         border-radius: @btn-border-radius;
         transition: all @transition-time linear;
@@ -242,7 +175,8 @@
         .@{input-number-prefix-cls}-input {
             opacity: 0.72;
             cursor: @cursor-disabled;
-            background-color: #f3f3f3;
+            background-color: @input-disabled-bg;
+            color: @disabled-text-color;
         }
         .@{input-number-prefix-cls}-handler-wrap {
             display: none;

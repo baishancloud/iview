@@ -1,24 +1,30 @@
 <template>
     <div>
-        <i-switch v-model="m1" true-value="yes" false-value="no">
+        <i-switch :only-text="true">
             <span slot="open">开</span>
             <span slot="close">关</span>
         </i-switch>
-        {{ m1 }}
-        <div @click="m1 = 'no'">toggle</div>
+        <i-switch>
+            <span slot="open">开</span>
+            <span slot="close">关</span>
+        </i-switch>
+        <i-switch disabled>
+            <span slot="open">开</span>
+            <span slot="close">关</span>
+        </i-switch>
+        <i-switch class="bsc-switch-only-text" disabled>
+            <span slot="open">开</span>
+            <span slot="close">关</span>
+        </i-switch>
     </div>
 </template>
 <script>
     export default {
         data () {
             return {
-                m1: 'yes'
-            }
+            };
         },
         methods: {
-            change (status) {
-                console.log(status)
-            }
         }
-    }
+    };
 </script>

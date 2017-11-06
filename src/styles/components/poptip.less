@@ -6,6 +6,51 @@
 @poptip-distance: @poptip-arrow-width - 1 + 4;
 //@poptip-arrow-color: fadein(@border-color-base, 5%);
 @poptip-arrow-color: hsla(0,0%,85%,.5);
+@poptip-arrow-color-dark: #475669;
+
+.dark .@{poptip-prefix-cls} {
+    &-title {
+        &:after{
+            background-color: @border-color-split-dark;
+        }
+
+        &-inner{
+            color: @title-color-dark;
+        }
+    }
+
+    &-body{
+        &-content{
+            &-inner{
+                color: #ffffff;
+            }
+        }
+    }
+
+    &-inner{
+        background-color: #475669;
+    }
+
+    &-popper{
+        .popper(@poptip-arrow, @poptip-arrow-width, @poptip-distance, @poptip-arrow-color-dark);
+
+        &[x-placement^="top"] .@{poptip-arrow}:after {
+            border-top-color: #475669;
+        }
+
+        &[x-placement^="right"] .@{poptip-arrow}:after {
+            border-right-color: #475669;
+        }
+
+        &[x-placement^="bottom"] .@{poptip-arrow}:after {
+            border-bottom-color: #475669;
+        }
+
+        &[x-placement^="left"] .@{poptip-arrow}:after {
+            border-left-color: #475669;
+        }
+    }
+}
 
 .@{poptip-prefix-cls} {
     display: inline-block;

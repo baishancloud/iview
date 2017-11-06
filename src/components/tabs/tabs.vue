@@ -3,11 +3,7 @@
         <div :class="[prefixCls + '-bar']">
             <div :class="[prefixCls + '-nav-right']" v-if="showSlot"><slot name="extra"></slot></div>
             <div :class="[prefixCls + '-nav-container']">
-<<<<<<< HEAD
                 <div ref="navWrap" :class="[prefixCls + '-nav-wrap', scrollable ? prefixCls + '-nav-scrollable' : '']">
-=======
-                <div ref="navWrap" :class="[prefixCls + '-nav-wrap', scrollable ? prefixCls + '-nav-scrollable' : '']" >
->>>>>>> Squashed commit of the following:
                     <span :class="[prefixCls + '-nav-prev', scrollable ? '' : prefixCls + '-nav-scroll-disabled']" @click="scrollPrev"><Icon type="chevron-left"></Icon></span>
                     <span :class="[prefixCls + '-nav-next', scrollable ? '' : prefixCls + '-nav-scroll-disabled']" @click="scrollNext"><Icon type="chevron-right"></Icon></span>
                     <div ref="navScroll" :class="[prefixCls + '-nav-scroll']">
@@ -358,7 +354,11 @@
         },
         beforeDestroy() {
             this.observer.removeListener(this.$refs.navWrap, this.handleResize);
+<<<<<<< HEAD
             if (this.mutationObserver) this.mutationObserver.disconnect();
+=======
+            this.mutationObserver.disconnect();
+>>>>>>> Squashed commit of the following:
         }
     };
 </script>

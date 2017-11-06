@@ -13,7 +13,7 @@ nav {
 .v-link-active { color: #bbb; }
 </style>
 <template>
-    <div class="container">
+    <div class="container dark">
         <nav>
             <ul>
                 <li><router-link to="/layout">Layout</router-link></li>

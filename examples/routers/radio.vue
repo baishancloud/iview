@@ -9,7 +9,7 @@
                 <Icon type="social-apple"></Icon>
                 <span>Apple</span>
             </Radio>
-            <Radio label="android">
+            <Radio label="android" disabled>
                 <Icon type="social-android"></Icon>
                 <span>Android</span>
             </Radio>

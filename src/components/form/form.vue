@@ -80,7 +80,7 @@
                             }
                         });
                     });
-                });
+                })
             },
             validateField(prop, cb) {
                 const field = this.fields.filter(field => field.prop === prop)[0];

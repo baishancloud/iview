@@ -1,5 +1,30 @@
 @input-prefix-cls: ~"@{css-prefix}input";
 
+.dark .@{input-prefix-cls} {
+    .input-dark;
+    &-icon {
+        color: @subsidiary-color-dark;
+    }
+}
+
+.dark .@{input-prefix-cls}-group{
+    .input-group-dark(~"@{input-prefix-cls}");
+}
+
+.dark .@{form-item-prefix-cls}-error{
+    .@{input-prefix-cls}-group{
+        .input-group-error-dark;
+    }
+    .@{transfer-prefix-cls} {
+        .@{input-prefix-cls} {
+            .input;
+            &-icon{
+                color: @subsidiary-color-dark;
+            }
+        }
+    }
+}
+
 .@{input-prefix-cls} {
     .input;
     &-wrapper{

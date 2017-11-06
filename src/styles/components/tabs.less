@@ -1,5 +1,45 @@
 @tabs-prefix-cls: ~"@{css-prefix}tabs";
 
+.dark .@{tabs-prefix-cls} {
+    color: @text-color-dark;
+
+    &-ink-bar {
+        background-color: @primary-color-blue;
+    }
+
+    &-bar {
+        border-bottom: 1px solid @border-color-base-dark;
+    }
+
+    &-nav {
+        .@{tabs-prefix-cls}-tab-disabled {
+            color: #666;
+        }
+
+        .@{tabs-prefix-cls}-tab-active {
+            color: @primary-color-blue;
+        }
+    }
+
+    // card style
+    &.@{tabs-prefix-cls}-card > .@{tabs-prefix-cls}-bar .@{tabs-prefix-cls}-tab {
+        border: 1px solid @border-color-base-dark;
+        border-bottom: 0;
+        background: @tabs-card-bar-tab-bg;
+    }
+    &.@{tabs-prefix-cls}-card > .@{tabs-prefix-cls}-bar .@{tabs-prefix-cls}-tab-active {
+        background: @tabs-card-bar-tab-active-bg;
+        border-color: @border-color-base-dark;
+        color: @primary-color-blue;
+    }
+    &.@{tabs-prefix-cls}-card > .@{tabs-prefix-cls}-bar .@{tabs-prefix-cls}-tab .@{css-prefix-iconfont}-ios-close-empty {
+        color: @legend-color-dark;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
 .@{tabs-prefix-cls} {
     box-sizing: border-box;
     position: relative;

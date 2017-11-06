@@ -2,107 +2,6 @@
 @picker-prefix-cls: ~"@{css-prefix}picker";
 
 @date-picker-cells-width: 196px;
-@date-picker-cells-width-with-weeknumbers: 226px;
-
-.dark .@{date-picker-prefix-cls} {
-    &-cells{
-        &-header span{
-            color: @date-picker-week-color-dark;
-        }
-        &-cell{
-            color: #c0ccda;
-            &:hover{
-                em{
-                    background: @date-picker-cell-hover-bg-dark;
-                }
-            }
-            &-prev-month,&-next-month{
-                em{
-                    color: @date-picker-prev-next-month-color-dark;
-                }
-                &:hover{
-                    em{
-                        background: transparent;
-                    }
-                }
-            }
-            &-disabled,&-disabled:hover{
-                background: #777;
-                color: @date-picker-prev-next-month-color-dark;
-                em{
-                    color: inherit;
-                    background: inherit;
-                }
-            }
-            &-today{
-                em {
-                    &:after{
-                        background: @primary-color-blue;
-                    }
-                }
-            }
-            &-range{
-                &:before{
-                    background: @date-picker-cell-hover-bg-dark;
-                }
-            }
-            &-selected,&-selected:hover
-            {
-                em{
-                    background: @primary-color-blue;
-                    color: #fff;
-                }
-            }
-        }
-    }
-
-    &-header{
-        color: #c0ccda;
-        border-bottom: 1px solid @border-color-split-dark;
-        &-label{
-            &:hover{
-                color: @primary-color-blue;
-            }
-        }
-    }
-}
-
-.dark .@{picker-prefix-cls} {
-    &-panel{
-        &-icon-btn{
-            color: #c0ccda;
-            &:hover{
-                color: @primary-color-blue;
-            }
-        }
-        &-sidebar{
-            background: @table-thead-bg-dark;
-            border-right: 1px solid @border-color-split-dark;
-        }
-        &-shortcut{
-            &:hover{
-                background: @border-color-split-dark;
-            }
-            color: #ccc;
-        }
-    }
-
-    &-confirm{
-        border-top: 1px solid @border-color-split-dark;
-        & > span{
-            color: @link-color;
-            &:hover{
-                color: @link-hover-color;
-            }
-            &:active{
-                color: @link-active-color;
-            }
-        }
-        & > span.@{picker-prefix-cls}-confirm-time-disabled{
-            color: @btn-disable-color-dark;
-        }
-    }
-}
 
 .@{date-picker-prefix-cls} {
     //position: relative;
@@ -142,7 +41,7 @@
             line-height: 24px;
             text-align: center;
             margin: 2px;
-            color: @btn-disable-color;
+            color: @date-picker-week-color;
         }
         &-cell{
             span&{
@@ -157,7 +56,7 @@
             }
             &-prev-month,&-next-month{
                 em{
-                    color: @btn-disable-color;
+                    color: @date-picker-prev-next-month-color;
                 }
                 &:hover{
                     em{
@@ -165,16 +64,14 @@
                     }
                 }
             }
-            span&-week-label,span&-week-label:hover,span&-disabled,span&-disabled:hover{
+            span&-disabled,span&-disabled:hover{
                 cursor: @cursor-disabled;
+                background: @btn-disable-bg;
                 color: @btn-disable-color;
                 em{
                     color: inherit;
                     background: inherit;
                 }
-            }
-            span&-disabled,span&-disabled:hover{
-                background: @btn-disable-bg;
             }
             &-today{
                 em {
@@ -185,7 +82,7 @@
                         width: 6px;
                         height: 6px;
                         border-radius: 50%;
-                        background: @primary-color;
+                        background: @date-picker-today-bg;
                         position: absolute;
                         top: 1px;
                         right: 1px;
@@ -214,7 +111,7 @@
             &-selected,&-selected:hover
             {
                 em{
-                    background: @primary-color;
+                    background: @date-picker-today-bg;
                     color: #fff;
                 }
             }
@@ -233,10 +130,6 @@
                 }
             }
         }
-    }
-
-    &-cells-show-week-numbers {
-        width: @date-picker-cells-width-with-weeknumbers;
     }
 
     &-cells-year,&-cells-month{
@@ -265,7 +158,7 @@
             cursor: pointer;
             transition: color @transition-time @ease-in-out;
             &:hover{
-                color: @primary-color;
+                color: @date-picker-today-bg;
             }
         }
     }
@@ -297,20 +190,7 @@
                 float: left;
             }
         }
-        .@{picker-prefix-cls}-cells-show-week-numbers {
-            min-width: (@date-picker-cells-width-with-weeknumbers + 20) * 2;
-        }
-
     }
-
-    &-with-week-numbers{
-        .@{picker-prefix-cls}-panel{
-            &-body{
-                min-width: (@date-picker-cells-width-with-weeknumbers + 20) * 2;
-            }
-        }
-    }
-
     &-transfer{
         z-index: @zindex-transfer;
         max-height: none;
@@ -328,10 +208,10 @@
             margin-top: 4px;
             text-align: center;
             cursor: pointer;
-            color: @btn-disable-color;
+            color: #d3dce6;
             transition: color @transition-time @ease-in-out;
             &:hover{
-                color: @primary-color;
+                color: @date-picker-today-bg;
             }
             i{
                 font-size: 14px;

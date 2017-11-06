@@ -1,5 +1,27 @@
 @icon-prefix-cls: ~"@{css-prefix}icon";
 
+.content-header-dark() {
+    background-color: @modal-header-bg-dark;
+    border-radius: 0;
+    padding: 7px 16px;
+    line-height: 1;
+
+    p,
+    &-inner
+    {
+        display: inline-block;
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        font-size: @font-size-base;
+        color: @title-color-dark;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
 .content-header() {
     background-color: @modal-header-bg;
     border-radius: 0;
@@ -19,6 +41,19 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+    }
+}
+
+.content-close-dark(@top: 0, @icon-font-size: 22px) {
+    font-size: @font-size-small;
+    position: absolute;
+    right: 16px;
+    top: 0px;
+    overflow: hidden;
+    cursor: pointer;
+
+    .@{icon-prefix-cls}-ios-close-empty {
+        .close-base-dark(@top, @icon-font-size);
     }
 }
 

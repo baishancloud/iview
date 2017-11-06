@@ -1,3 +1,19 @@
+.placeholder-dark(@color: @input-placeholder-color-dark) {
+    // Firefox
+    &::-moz-placeholder {
+        color: @color;
+        opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+    }
+    // Internet Explorer 10+
+    &:-ms-input-placeholder {
+        color: @color;
+    }
+    // Safari and Chrome
+    &::-webkit-input-placeholder {
+        color: @color;
+    }
+}
+
 .placeholder(@color: @input-placeholder-color) {
     // Firefox
     &::-moz-placeholder {
@@ -12,6 +28,18 @@
     &::-webkit-input-placeholder {
         color: @color;
     }
+}
+
+// for select and input like component's arrow
+.inner-arrow-dark() {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    line-height: 1;
+    margin-top: -7px;
+    font-size: @font-size-base;
+    color: @subsidiary-color-dark;
+    transition: all @transition-time @ease-in-out;
 }
 
 // for select and input like component's arrow

@@ -1,3 +1,73 @@
+.select-item-dark(@size-class, @item-class) {
+    .@{item-class} {
+        margin: 0;
+        line-height: normal;
+        padding: 7px 16px;
+        clear: both;
+        color: @text-color-dark;
+        font-size: @font-size-small !important;
+        white-space: nowrap;
+        list-style: none;
+        cursor: pointer;
+        transition: background @transition-time @ease-in-out;
+
+        &:hover{
+            background: @background-color-select-hover-dark;
+        }
+
+        &-focus {
+            background: @background-color-select-hover-dark;
+        }
+
+        &-disabled {
+            color: @btn-disable-color-dark;
+            cursor: @cursor-disabled;
+
+            &:hover {
+                color: @btn-disable-color-dark;
+                background-color: #414d56;
+                cursor: @cursor-disabled;
+            }
+        }
+
+        &-selected ,&-selected:hover{
+            color: @selected-color-dark;
+            background: @selected-bg-dark;
+        }
+
+        &-selected&-focus {
+            background: shade(@selected-bg-dark, 10%);
+        }
+
+        &-divided{
+            margin-top: 5px;
+            border-top: 1px solid @border-color-split-dark;
+            &:before{
+                content: '';
+                height: 5px;
+                display: block;
+                margin: 0 -16px;
+                background-color: #414d56;
+                position: relative;
+                top: -7px;
+            }
+        }
+    }
+
+    .@{size-class}-large .@{item-class} {
+        padding: 7px 16px 8px;
+        font-size: @font-size-base !important;
+    }
+    // http://browserhacks.com/
+    // https://bugzilla.mozilla.org/show_bug.cgi?id=488725
+    // fixed #1224 #1143 #1127
+    @-moz-document url-prefix() {
+        .@{item-class} {
+            white-space: normal;
+        }
+    }
+}
+
 .select-item(@size-class, @item-class) {
     .@{item-class} {
         margin: 0;

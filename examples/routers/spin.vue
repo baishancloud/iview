@@ -150,6 +150,7 @@
         position: relative;
         border: 1px solid red;
         text-align: center;
+        background-color: #39434b;
     }
     .demo-spin-article h3{
         font-size: 22px;
@@ -174,6 +175,7 @@
                 <p>三山半落青天外，二水中分白鹭洲。</p>
                 <p>总为浮云能蔽日，长安不见使人愁。</p>
             </article>
+            <Table border stripe :columns="columns6" :data="data5"></Table>
             <Spin size="large" fix v-if="spinShow">
                 <!--<Icon type="load-c" size=18 class="demo-spin-icon-load"></Icon>-->
                 <!--<div>Loading</div>-->
@@ -189,7 +191,87 @@
     export default {
         data () {
             return {
-                spinShow: true
+                spinShow: true,
+                columns6: [
+                    {
+                        title: '日期',
+                        key: 'date',
+                        sortable: true
+                    },
+                    {
+                        title: '姓名',
+                        key: 'name'
+                    },
+                    {
+                        title: '年龄',
+                        key: 'age',
+                        filters: [
+                            {
+                                label: '大于25岁',
+                                value: 1
+                            },
+                            {
+                                label: '小于25岁',
+                                value: 2
+                            }
+                        ],
+                        filterMultiple: false,
+                        filterMethod (value, row) {
+                            if (value === 1) {
+                                return row.age > 25;
+                            } else if (value === 2) {
+                                return row.age < 25;
+                            }
+                        }
+                    },
+                    {
+                        title: '地址',
+                        key: 'address',
+                        filters: [
+                            {
+                                label: '北京',
+                                value: '北京'
+                            },
+                            {
+                                label: '上海',
+                                value: '上海'
+                            },
+                            {
+                                label: '深圳',
+                                value: '深圳'
+                            }
+                        ],
+                        filterMethod (value, row) {
+                            return row.address.indexOf(value) > -1;
+                        }
+                    }
+                ],
+                data5: [
+                    {
+                        name: '王小明',
+                        age: 18,
+                        address: '北京市朝阳区芍药居',
+                        date: '2016-10-03'
+                    },
+                    {
+                        name: '张小刚',
+                        age: 25,
+                        address: '北京市海淀区西二旗',
+                        date: '2016-10-01'
+                    },
+                    {
+                        name: '李小红',
+                        age: 30,
+                        address: '上海市浦东新区世纪大道',
+                        date: '2016-10-02'
+                    },
+                    {
+                        name: '周小伟',
+                        age: 26,
+                        address: '深圳市南山区深南大道',
+                        date: '2016-10-04'
+                    }
+                ]
             }
         },
         methods: {

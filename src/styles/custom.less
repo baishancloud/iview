@@ -4,6 +4,8 @@
 
 // Color
 @primary-color          : #1e9fff;
+@primary-color-dark     : #222b31;
+@primary-color-blue     : #20a0ff;
 @info-color             : #2db7f5;
 @success-color          : #19be6b;
 @warning-color          : #ff9900;
@@ -12,8 +14,11 @@
 @link-hover-color       : tint(@link-color, 20%);
 @link-active-color      : shade(@link-color, 5%);
 @selected-color         : fade(@primary-color, 90%);
+@selected-color-dark    : #c0ccda;
+@selected-bg-dark       : #313a41;
 @tooltip-color          : #fff;
 @subsidiary-color       : #80848f;
+@subsidiary-color-dark  : #bbbec4;
 @rate-star-color        : #f5a623;
 
 // Base
@@ -21,7 +26,9 @@
 @font-family            : "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 @code-family            : Consolas,Menlo,Courier,monospace;
 @title-color            : #ffffff;
+@title-color-dark       : #8492a6;
 @text-color             : #475669;
+@text-color-dark        : #c0ccda;
 @font-size-base         : 14px;
 @font-size-small        : 12px;
 @line-height-base       : 1.5;
@@ -29,26 +36,43 @@
 @border-radius-base     : 6px;
 @border-radius-small    : 4px;
 @cursor-disabled        : not-allowed;
+@disabled-bg-dark             : #414d56;
+@disabled-text-color-dark     : #71818d;
 
 // Border color
-@border-color-base      : #d3dce6;  // outside
-@border-color-split     : #e9eaec;  // inside
+@border-color-base            : #d3dce6;  // outside
+@border-color-base-dark       : #52626d;  // outside
+@border-color-split           : #e9eaec;  // inside
+@border-color-split-dark      : #52626d;  // inside
 
 // Background color
-@background-color-base        : #f7f7f7;  // base
-@background-color-select-hover: @input-disabled-bg;
-@background-button-color      : #ffffff;
-@tooltip-bg                   : rgba(70, 76, 91, .9);
-@head-bg                      : #f9fafc;
-@table-thead-bg               : #f8f8f9;
-@table-td-stripe-bg           : #f8f8f9;
-@table-td-hover-bg            : #ebf7ff;
-@table-td-highlight-bg        : #ebf7ff;
-@menu-dark-title              : #2e373e;
-@menu-dark-active-bg          : #3a434b;
-@menu-dark-subsidiary-color   : rgba(255,255,255,.7);
-@menu-dark-group-title-color  : rgba(255,255,255,.36);
-@date-picker-cell-hover-bg    : #e1f0fe;
+@background-color-base                  : #f7f7f7;  // base
+@background-color-select-hover          : @input-disabled-bg;
+@background-color-select-hover-dark     : #313a41;
+@background-button-color                : #ffffff;
+@background-button-color-dark           : #414d56;
+@tooltip-bg                             : rgba(70, 76, 91, .9);
+@tooltip-bg-dark                        : #475669;
+@head-bg                                : #f9fafc;
+@table-thead-bg                         : #f8f8f9;
+@table-thead-bg-dark                    : #303b40;
+@table-td-bg-dark                       : #39434b;
+@table-td-stripe-bg                     : #f8f8f9;
+@table-td-stripe-bg-dark                : #414e55;
+@table-td-hover-bg                      : #ebf7ff;
+@table-td-hover-bg-dark                 : #4b5b63;
+@table-td-highlight-bg                  : #ebf7ff;
+@table-td-highlight-bg-dark             : #4b5b63;
+@table-th-font-color-dark               : #8492a6;
+@table-td-font-color-dark               : #c0ccda;
+@menu-dark-title                        : #2e373e;
+@menu-dark-active-bg                    : #3a434b;
+@menu-dark-subsidiary-color             : rgba(255,255,255,.7);
+@menu-dark-group-title-color            : rgba(255,255,255,.36);
+@date-picker-cell-hover-bg              : #e1f0fe;
+@date-picker-cell-hover-bg-dark         : #313a41;
+@date-picker-week-color-dark            : #8492a6;
+@date-picker-prev-next-month-color-dark : #475669;
 
 // Shadow
 @shadow-color           : rgba(0, 0, 0, .2);
@@ -69,21 +93,31 @@
 @btn-border-radius      : 4px;
 @btn-border-radius-small: 3px;
 @btn-group-border       : shade(@primary-color, 5%);
+@btn-group-border-dark  : shade(@primary-color-dark, 5%);
+
 
 @btn-disable-color      : #bbbec4;
+@btn-disable-color-dark : #71818d;
 @btn-disable-bg         : @background-color-base;
 @btn-disable-border     : @border-color-base;
+@btn-disable-border-dark: @border-color-base-dark;
 
 @btn-default-color      : @text-color;
+@btn-default-color-dark : @text-color-dark;
 @btn-default-bg         : @background-button-color;
+@btn-default-bg-dark    : @background-button-color-dark;
 @btn-default-border     : @border-color-base;
+@btn-default-border-dark: @border-color-base-dark;
 
 @btn-primary-color      : #fff;
 @btn-primary-bg         : @primary-color;
+@btn-primary-bg         : @primary-color-blue;
 
 @btn-ghost-color        : @text-color;
+@btn-ghost-color-dark   : @text-color-dark;
 @btn-ghost-bg           : transparent;
 @btn-ghost-border       : @border-color-base;
+@btn-ghost-border-dark  : @border-color-base-dark;
 
 @btn-circle-size        : 32px;
 @btn-circle-size-large  : 36px;
@@ -106,6 +140,7 @@
 
 // Legend
 @legend-color           : #999;
+@legend-color-dark      : #999;
 
 // Input
 @input-height-base           : 32px;
@@ -117,14 +152,21 @@
 @input-padding-vertical-small: 1px;
 @input-padding-vertical-large: 6px;
 
-@input-placeholder-color     : @btn-disable-color;
-@input-color                 : @text-color;
-@input-border-color          : @border-color-base;
-@input-bg                    : #fff;
+@input-placeholder-color         : @btn-disable-color;
+@input-placeholder-color-dark    : #71818d;
+@input-color                     : @text-color;
+@input-color-dark                : #a1acb5;
+@input-border-color              : @border-color-base;
+@input-border-color-dark         : @border-color-base-dark;
+@input-bg                        : #fff;
+@input-bg-dark                   : #414d56;
 
-@input-hover-border-color    : @primary-color;
-@input-focus-border-color    : @primary-color;
-@input-disabled-bg           : #f3f3f3;
+@input-hover-border-color        : @primary-color;
+@input-hover-border-color-dark   : #20a0ff;
+@input-focus-border-color        : @primary-color;
+@input-focus-border-color-dark   : #20a0ff;
+@input-disabled-bg               : #f3f3f3;
+@input-disabled-bg-dark          : #556470;
 
 // Tag
 @tag-font-size          : 12px;
@@ -188,5 +230,15 @@
 @avatar-border-radius: @border-radius-small;
 
 // Modal
-@modal-header-bg: @primary-color;
-@modal-footer-bg: #f9fafc;
+@modal-header-bg          : @primary-color;
+@modal-header-bg-dark     : @primary-color-dark;
+@modal-footer-bg          : #f9fafc;
+@modal-footer-bg-dark     : #313a41;
+
+// Checkbox
+@checkbox-border-color-dark    : #8492a6;
+@checkbox-selection-color-dark : #bbbec4;
+
+// Tabs
+@tabs-card-bar-tab-bg          : #414e55;
+@tabs-card-bar-tab-active-bg   : #39434b;

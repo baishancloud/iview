@@ -7,7 +7,7 @@
 .button-color(@color; @background; @border) {
     color: @color;
     background-color: @background;
-    border-color: @border;
+    border-color: @background;
     // a inside Button which only work in Chrome
     // http://stackoverflow.com/a/17253457
     > a:only-child {
@@ -46,32 +46,6 @@
         &:active,
         &.active {
             .button-color(@btn-disable-color; @btn-disable-bg; @btn-disable-border);
-        }
-    }
-}
-
-.button-variant-dark(@color; @background; @border) {
-    .button-color(@color; @background; @border);
-
-    &:hover
-    //&:focus
-    {
-        .button-color(tint(@color, 20%); tint(@background, 20%); tint(@border, 20%));
-    }
-    &:active,
-    &.active {
-        .button-color(shade(@color, 5%); shade(@background, 5%); shade(@background, 5%));
-    }
-
-    &.disabled,
-    &[disabled],
-    fieldset[disabled] & {
-        &,
-        &:hover,
-        &:focus,
-        &:active,
-        &.active {
-            .button-color(@btn-disable-color-dark; @btn-disable-border-dark; @btn-disable-border-dark);
         }
     }
 }
@@ -161,7 +135,7 @@
     .button-size(@btn-padding-base; @btn-font-size; @btn-border-radius);
     //transform: translate3d(0, 0, 0);
     //transition: all @transition-time linear;
-    transition: color @transition-time linear, background-color @transition-time linear, border @transition-time linear, box-shadow @transition-time linear;
+    transition: color @transition-time linear, background-color @transition-time linear, border @transition-time linear;
 
     > .@{css-prefix-iconfont} {
         line-height: 1;
@@ -179,7 +153,7 @@
 
     &:not([disabled]):active {
         outline: 0;
-        // transition: none;  // 如果不注释此行，那么active会和focus同时触发，此时focus的开始动画transition会无效
+        transition: none;
     }
 
     &.disabled,
@@ -206,13 +180,14 @@
     &:hover
     //&:focus
     {
-        .button-color(tint(@primary-color, 20%); white; tint(@primary-color, 20%));
+        background-color: #556470;
+        // .button-color(tint(@primary-color, 20%); white; tint(@primary-color, 20%));
     }
     &:active,
     &.active {
-        .button-color(shade(@primary-color, 5%); white; shade(@primary-color, 5%));
+        background-color: #556470;
+        // .button-color(shade(@primary-color, 5%); white; shade(@primary-color, 5%));
     }
-    .active-btn-color(@primary-color);
 }
 
 // Primary
@@ -225,7 +200,6 @@
     &.active {
         color: @btn-primary-color;
     }
-    .active-btn-color(@primary-color);
 }
 
 // Ghost
@@ -241,7 +215,6 @@
     &.active {
         .button-color(shade(@primary-color, 5%); @btn-ghost-bg; shade(@primary-color, 5%));
     }
-    .active-btn-color(@primary-color);
 }
 
 // Dashed
@@ -258,7 +231,6 @@
     &.active {
         .button-color(shade(@primary-color, 5%); @btn-ghost-bg; shade(@primary-color, 5%));
     }
-    .active-btn-color(@primary-color);
 }
 
 // Text
@@ -287,16 +259,9 @@
     &.active {
         .button-color(shade(@primary-color, 5%); @btn-ghost-bg; transparent);
     }
-    .active-btn-color(@primary-color);
 }
 
 // Color
-// for tabindex
-.active-btn-color(@color) {
-    &:focus {
-        box-shadow: 0 0 0 2px fade(@color, 20%);
-    }
-}
 .btn-color(@color) {
     .button-variant(@btn-primary-color; @color; @color);
 
@@ -306,8 +271,6 @@
     &.active {
         color: @btn-primary-color;
     }
-
-    .active-btn-color(@color);
 }
 
 // Circle for Icon
@@ -425,184 +388,5 @@
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
         padding-top: 8px;
-    }
-}
-
-// Default-dark
-.btn-default-dark() {
-    .button-variant-dark(@btn-default-color-dark; @btn-default-bg-dark; @btn-default-border-dark);
-
-    &:hover
-    //&:focus
-    {
-        background-color: #556470;
-        // .button-color(tint(@primary-color, 20%); white; tint(@primary-color, 20%));
-    }
-    &:active,
-    &.active {
-        background-color: #556470;
-        // .button-color(shade(@primary-color, 5%); white; shade(@primary-color, 5%));
-    }
-}
-
-// Primary-dark
-.btn-primary-dark() {
-    .button-variant-dark(@btn-primary-color; @btn-primary-bg; @primary-color);
-
-    &:hover,
-    //&:focus,
-    &:active,
-    &.active {
-        color: @btn-primary-color;
-    }
-}
-
-// Ghost-dark
-.btn-ghost-dark() {
-    .button-variant-dark(#000, @btn-ghost-bg, @btn-ghost-border-dark);
-
-    &:hover
-    //&:focus
-    {
-        .button-color(tint(@primary-color, 20%); @btn-ghost-bg; tint(@primary-color, 20%));
-    }
-    &:active,
-    &.active {
-        .button-color(shade(@primary-color, 5%); @btn-ghost-bg; shade(@primary-color, 5%));
-    }
-}
-
-// Dashed-dark
-.btn-dashed-dark() {
-    .button-variant-dark(@btn-ghost-color, @btn-ghost-bg, @btn-ghost-border);
-    border-style: dashed;
-
-    &:hover
-    //&:focus
-    {
-        .button-color(tint(@primary-color, 20%); @btn-ghost-bg; tint(@primary-color, 20%));
-    }
-    &:active,
-    &.active {
-        .button-color(shade(@primary-color, 5%); @btn-ghost-bg; shade(@primary-color, 5%));
-    }
-}
-
-// Text-dark
-.btn-text-dark() {
-    .button-variant-dark(@btn-ghost-color, @btn-ghost-bg, transparent);
-
-    // for disabled
-    &.disabled,
-    &[disabled],
-    fieldset[disabled] & {
-        &,
-        &:hover,
-        &:focus,
-        &:active,
-        &.active {
-            .button-color(@btn-disable-color; @btn-ghost-bg; transparent);
-        }
-    }
-
-    &:hover
-        //&:focus
-    {
-        .button-color(tint(@primary-color, 20%); @btn-ghost-bg; transparent);
-    }
-    &:active,
-    &.active {
-        .button-color(shade(@primary-color, 5%); @btn-ghost-bg; transparent);
-    }
-}
-
-// Color-dark
-.btn-color-dark(@color) {
-    .button-variant(@btn-primary-color; @color; @color);
-
-    &:hover,
-        //&:focus,
-    &:active,
-    &.active {
-        color: @btn-primary-color;
-    }
-}
-
-// Circle-dark for Icon-dark
-.btn-circle-dark(@btnClassName: bsc-btn) {
-    border-radius: @btn-circle-size;
-
-    &.@{btnClassName}-large{
-        border-radius: @btn-circle-size-large;
-    }
-
-    &.@{btnClassName}-size{
-        border-radius: @btn-circle-size-small;
-    }
-
-    &.@{btnClassName}-icon-only{
-        .square(@btn-circle-size);
-        .button-size(0; @font-size-base + 2; 50%);
-
-        &.@{btnClassName}-large{
-            .square(@btn-circle-size-large);
-            .button-size(0; @btn-font-size-large + 2; 50%);
-        }
-
-        &.@{btnClassName}-small{
-            .square(@btn-circle-size-small);
-            .button-size(0; @font-size-base; 50%);
-        }
-    }
-}
-
-// Group-dark
-.btn-group-dark(@btnClassName: bsc-btn) {
-    .button-group-base(@btnClassName);
-
-    .@{btnClassName} + .@{btnClassName},
-    .@{btnClassName} + &,
-    & + .@{btnClassName},
-    & + & {
-        margin-left: -1px;
-    }
-
-    .@{btnClassName}:not(:first-child):not(:last-child) {
-        border-radius: 0;
-    }
-
-    &:not(&-vertical) > .@{btnClassName}:first-child {
-        margin-left: 0;
-        &:not(:last-child) {
-            border-bottom-right-radius: 0;
-            border-top-right-radius: 0;
-        }
-    }
-
-    &:not(&-vertical) > .@{btnClassName}:last-child:not(:first-child) {
-        border-bottom-left-radius: 0;
-        border-top-left-radius: 0;
-    }
-
-    & > & {
-        float: left;
-    }
-
-    & > &:not(:first-child):not(:last-child) > .@{btnClassName} {
-        border-radius: 0;
-    }
-
-    &:not(&-vertical) > &:first-child:not(:last-child) {
-        > .@{btnClassName}:last-child {
-            border-bottom-right-radius: 0;
-            border-top-right-radius: 0;
-            padding-right: 8px;
-        }
-    }
-
-    &:not(&-vertical) > &:last-child:not(:first-child) > .@{btnClassName}:first-child {
-        border-bottom-left-radius: 0;
-        border-top-left-radius: 0;
-        padding-left: 8px;
     }
 }

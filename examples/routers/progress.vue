@@ -15,6 +15,13 @@
             <i-progress vertical :percent="percent" :stroke-width="20" hide-info></i-progress>
             <i-progress vertical :percent="percent"></i-progress>
         </div>
+        <div style="width: 150px">
+            <Progress :percent="25"></Progress>
+            <Progress :percent="45" status="active"></Progress>
+            <Progress :percent="65" status="wrong"></Progress>
+            <Progress :percent="100"></Progress>
+            <Progress :percent="25" hide-info></Progress>
+        </div>
     </div>
 </template>
 <script>

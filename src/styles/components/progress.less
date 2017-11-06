@@ -1,5 +1,14 @@
 @progress-prefix-cls: ~"@{css-prefix}progress";
 
+.dark .@{progress-prefix-cls} {
+    &-inner {
+        background-color: #ccc;
+    }
+    &-text {
+        color: #c0ccda;
+    }
+}
+
 .@{progress-prefix-cls} {
     display: inline-block;
 

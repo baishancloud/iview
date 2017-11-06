@@ -1,38 +1,6 @@
 @switch-prefix-cls: ~"@{css-prefix}switch";
 @switch-prefix-cls-only-text: ~"@{css-prefix}switch-only-text";
 
-.dark .@{switch-prefix-cls} {
-    border: 1px solid #ccc;
-    background-color: #414e55;
-
-    &-inner {
-        color: #fff;
-    }
-
-    &:after {
-        content: '';
-        background-color: #fff;
-    }
-
-    &-checked {
-        border-color: @primary-color;
-        background-color: @primary-color;
-    }
-
-    &-disabled {
-        background: #f3f3f3;
-        border-color: #f3f3f3;
-
-        &:after {
-            background: #ccc;
-        }
-
-        .@{switch-prefix-cls}-inner {
-            color: #ccc;
-        }
-    }
-}
-
 .@{switch-prefix-cls} {
     display: inline-block;
     width: 48px;
@@ -40,15 +8,15 @@
     line-height: 22px;
     border-radius: 24px;
     vertical-align: middle;
-    border: 1px solid #ccc;
-    background-color: #ccc;
+    border: 1px solid #53626d;
+    background-color: #414d56;
     position: relative;
     cursor: pointer;
     user-select: none;
     transition: all @transition-time @ease-in-out;
 
     &-inner {
-        color: #fff;
+        color: #71818d;
         font-size: @font-size-small;
         position: absolute;
         left: 25px;
@@ -65,7 +33,7 @@
         width: 20px;
         height: 20px;
         border-radius: 20px;
-        background-color: #fff;
+        background-color: #71818d;
         position: absolute;
         left: 1px;
         top: 1px;
@@ -129,15 +97,17 @@
     }
 
     &-checked {
-        border-color: @primary-color;
-        background-color: @primary-color;
+        border-color: @btn-primary-bg;
+        background-color: @btn-primary-bg;
 
         .@{switch-prefix-cls}-inner {
             left: 8px;
+            color: #fff;
         }
 
         &:after {
             left: 25px;
+            background-color: #fff;
         }
 
         &:active:after {
@@ -147,16 +117,16 @@
 
     &-disabled {
         cursor: @cursor-disabled;
-        background: #f3f3f3;
-        border-color: #f3f3f3;
+        background: #414d56;
+        border-color: #53626d;
 
         &:after {
-            background: #ccc;
+            background: #53626d;
             cursor: not-allowed;
         }
 
         .@{switch-prefix-cls}-inner {
-            color: #ccc;
+            color: #53626d;
         }
     }
 }
@@ -168,15 +138,15 @@
     line-height: 24px;
     border-radius: 24px;
     vertical-align: middle;
-    border: 2px solid #fff;
-    background-color: #1e9fff;
+    border: 2px solid #53626d;
+    background-color: @btn-primary-bg;
     position: relative;
     cursor: pointer;
     user-select: none;
     transition: all @transition-time @ease-in-out;
 
     &-inner {
-        color: #fff;
+        color: #71818d;
         font-size: @font-size-small;
         position: absolute;
         left: 25px;
@@ -193,7 +163,7 @@
         width: 20px;
         height: 20px;
         border-radius: 20px;
-        background-color: #fff;
+        background-color: #71818d;
         position: absolute;
         left: 1px;
         top: 1px;
@@ -257,14 +227,17 @@
     }
 
     &-checked {
-        background-color: @primary-color;
+        background-color: @btn-primary-bg;
 
         .@{switch-prefix-cls-only-text}-inner {
             left: 8px;
+            color: #fff;
         }
 
         &:after {
             left: 25px;
+            color: #fff;
+            background-color: #fff;
         }
 
         &:active:after {
@@ -274,16 +247,16 @@
 
     &-disabled {
         cursor: @cursor-disabled;
-        background: #f3f3f3;
-        border-color: #f3f3f3;
+        background: #414d56;
+        border-color: #53626d;
 
         &:after {
-            background: #ccc;
+            background: #53626d;
             cursor: not-allowed;
         }
 
         .@{switch-prefix-cls-only-text}-inner {
-            color: #ccc;
+            color: #53626d;
         }
     }
 }

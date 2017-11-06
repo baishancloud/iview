@@ -1,72 +1,6 @@
 @tag-prefix-cls: ~"@{css-prefix}tag";
 @tag-close-prefix-cls: bsc-icon-ios-close-empty;
 
-.dark .@{tag-prefix-cls} {
-    border: 1px solid @border-color-split-dark;
-    background: @table-thead-bg-dark;
-
-    &-dot{
-        border: 1px solid @border-color-split-dark !important;
-        color: @text-color-dark !important;
-        background: @table-thead-bg-dark !important;
-
-        &-inner{
-            background: @border-color-split-dark;
-        }
-        .@{tag-close-prefix-cls} {
-            color: #c0ccda !important;
-        }
-    }
-
-    &-border{
-        border: 1px solid @border-color-split-dark !important;
-        color: @text-color-dark !important;
-        background: @table-thead-bg-dark !important;
-
-        .@{tag-close-prefix-cls} {
-            color: #c0ccda !important;
-        }
-
-        &:after{
-            background: @border-color-split-dark;
-        }
-    }
-
-    &,
-    a,
-    a:hover {
-        color: @text-color-dark;
-    }
-
-    .@{tag-close-prefix-cls} {
-        color: #c0ccda;
-    }
-
-    &-blue,
-    &-blue&-dot &-dot-inner
-    {
-        background: @link-color;
-    }
-
-    &-green,
-    &-green&-dot &-dot-inner
-    {
-        background: @success-color;
-    }
-
-    &-yellow,
-    &-yellow&-dot &-dot-inner
-    {
-        background: @warning-color;
-    }
-
-    &-red,
-    &-red&-dot &-dot-inner
-    {
-        background: @error-color;
-    }
-}
-
 .@{tag-prefix-cls} {
     display: inline-block;
     height: 22px;
@@ -75,7 +9,7 @@
     padding: 0 8px;
     border: 1px solid @border-color-split;
     border-radius: @btn-border-radius-small;
-    background: @background-color-base;
+    background: @table-thead-bg;
     font-size: @tag-font-size;
     vertical-align: middle;
     opacity: 1;
@@ -87,32 +21,6 @@
     &:not(&-border):not(&-dot):not(&-checked){
         background: transparent;
         border: 0;
-        color: @text-color;
-        .@{tag-close-prefix-cls} {
-            color: @text-color !important;
-        }
-    }
-
-    &-color{
-        &-red{
-            color: @error-color !important;
-            border-color: @error-color;
-        }
-        &-green{
-            color: @success-color !important;
-            border-color: @success-color;
-        }
-        &-blue{
-            color: @link-color !important;
-            border-color: @link-color;
-        }
-        &-yellow{
-            color: @warning-color !important;
-            border-color: @warning-color;
-        }
-        &-white{
-            color: rgb(255, 255, 255) !important;
-        }
     }
 
     &-dot{
@@ -120,7 +28,7 @@
         line-height: 32px;
         border: 1px solid @border-color-split !important;
         color: @text-color !important;
-        background: #fff !important;
+        background: @table-thead-bg !important;
         padding: 0 12px;
 
         &-inner{
@@ -134,7 +42,7 @@
             top: 1px;
         }
         .@{tag-close-prefix-cls} {
-            color: #666 !important;
+            color: #c0ccda !important;
             margin-left: 12px !important;
         }
     }
@@ -142,13 +50,13 @@
     &-border{
         height: 24px;
         line-height: 24px;
-        border: 1px solid @border-color-split;
-        color: @border-color-split;
-        background: #fff !important;
+        border: 1px solid @border-color-split !important;
+        color: @text-color !important;
+        background: @table-thead-bg !important;
         position: relative;
 
         .@{tag-close-prefix-cls} {
-            color: #666;
+            color: #c0ccda !important;
             margin-left: 12px !important;
         }
 
@@ -156,7 +64,7 @@
             content: "";
             display: none;
             width: 1px;
-            background: currentColor;
+            background: @border-color-split;
             position: absolute;
             top: 0;
             bottom: 0;
@@ -225,7 +133,7 @@
     &,
     a,
     a:hover {
-        // color: @text-color;
+        color: @text-color;
     }
 
     &-text {
@@ -234,14 +142,13 @@
             margin: 0 -8px;
             padding: 0 8px;
         }
-        color: @text-color;
     }
 
     .@{tag-close-prefix-cls} {
         .iconfont-size-under-12px(20px);
         cursor: pointer;
         margin-left: 8px;
-        color: #666;
+        color: #c0ccda;
         opacity: 0.66;
         position: relative;
         top: 1px;

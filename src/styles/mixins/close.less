@@ -1,3 +1,15 @@
+.close-base-dark(@top: 0, @icon-font-size: 22px) {
+    font-size: @icon-font-size;
+    color: @title-color-dark;
+    transition: color @transition-time ease;
+    position: relative;
+    top: @top;
+    &:hover {
+        font-weight: bolder;
+        color: #eee;
+    }
+}
+
 .close-base(@top: 0, @icon-font-size: 22px) {
     font-size: @icon-font-size;
     color: #fff;

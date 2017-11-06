@@ -58,6 +58,12 @@
         <br><br>
         <h4>配合图标</h4>
         <br><br>
+        <Button type="primary">
+                <Icon type="chevron-left"></Icon>
+                前进
+            </Button>
+            <Button disabled>今日</Button>
+            <Button disabled>明日</Button>
         <Button-group>
             <Button type="primary">
                 <Icon type="chevron-left"></Icon>

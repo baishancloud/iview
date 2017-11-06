@@ -1,43 +1,6 @@
 @modal-prefix-cls: ~"@{css-prefix}modal";
 @confirm-prefix-cls: ~"@{css-prefix}modal-confirm";
 
-.dark .@{modal-prefix-cls} {
-    &-mask {
-        .mask;
-    }
-
-    &-content {
-        background-color: #39434b;
-        color: #c0ccda;
-    }
-
-    &-header {
-        .content-header-dark;
-        background-color: #293137;
-    }
-
-    &-close {
-        .content-close-dark(1px, 31px);
-    }
-
-    &-footer {
-        background: @modal-footer-bg-dark;
-    }
-}
-
-.dark .@{confirm-prefix-cls} {
-    &-head {
-        &-title {
-            color: @title-color-dark;
-        }
-    }
-
-    &-body{
-        color: @text-color-dark;
-    }
-}
-
-
 .@{modal-prefix-cls} {
     width: auto;
     margin: 0 auto;
@@ -72,7 +35,7 @@
 
     &-content {
         position: relative;
-        background-color: #fff;
+        background-color: #39434b;
         border: 0;
         border-radius: 0;
         background-clip: padding-box;
@@ -80,6 +43,7 @@
 
     &-header {
         .content-header;
+        background-color: #293137;
     }
 
     &-close {

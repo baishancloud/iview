@@ -4,6 +4,25 @@
 @spin-dot-size-large: 32px;
 @spin-dot-size-bigger: 44px;
 
+.dark .@{spin-prefix-cls} {
+    color: @primary-color-blue;
+
+    &-dot {
+        background-color: @primary-color-blue;
+    }
+
+    &-fix {
+        background-color: #39434b;
+        opacity: 0.9;
+    }
+}
+
+.dark .@{table-prefix-cls}-wrapper{
+    > .@{spin-prefix-cls}-fix{
+        border: 1px solid @border-color-base-dark;
+    }
+}
+
 .@{spin-prefix-cls} {
     color: @primary-color;
     vertical-align: middle;
