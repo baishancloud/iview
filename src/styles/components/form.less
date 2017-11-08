@@ -1,6 +1,12 @@
 @form-prefix-cls: ~"@{css-prefix}form";
 @form-item-prefix-cls: ~"@{form-prefix-cls}-item";
 
+.dark .@{form-prefix-cls} {
+    .@{form-item-prefix-cls}-label {
+        color: @text-color-dark;
+    }
+}
+
 .@{form-prefix-cls} {
     .@{form-item-prefix-cls}-label {
         text-align: right;
