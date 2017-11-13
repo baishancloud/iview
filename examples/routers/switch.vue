@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="backgroud:#111">
         <i-switch :only-text="true">
             <span slot="open">开</span>
             <span slot="close">关</span>
