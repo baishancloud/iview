@@ -22,7 +22,8 @@
         },
         data () {
             return {
-                active: false
+                active: false,
+                parent: findComponentUpward(this, 'Menu')
             };
         },
         computed: {
@@ -40,6 +41,9 @@
                 return this.hasParentSubmenu && this.mode !== 'horizontal' ? {
                     paddingLeft: 43 + (this.parentSubmenuNum - 1) * 24 + 'px'
                 } : {};
+            },
+            accordion () {
+                return this.parent.accordion;
             }
         },
         methods: {
@@ -52,6 +56,12 @@
                     this.dispatch('Submenu', 'on-menu-item-select', this.name);
                 } else {
                     this.dispatch('Menu', 'on-menu-item-select', this.name);
+                }
+                
+                if (this.accordion && this.$parent.$options.name === 'Menu') {
+                    this.parent.$children.forEach(item => {
+                        if (item.$options.name === 'Submenu') item.opened = false;
+                    });
                 }
             }
         },

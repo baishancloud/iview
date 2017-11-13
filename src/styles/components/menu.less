@@ -213,15 +213,11 @@
             color: #fff;
             background: @menu-dark-title;
         }
-        &-active:not(.@{menu-prefix-cls}-submenu){
-            color: #fff;
-            border-right: 2px solid @primary-color;
-        }
     }
     &-dark&-vertical &-submenu &-item{
         &:hover{
             color: #fff;
-            background: transparent !important;
+            background: @menu-dark-active-bg;
         }
         &-active,&-active:hover{
             border-right: none;
@@ -236,7 +232,7 @@
     }
 
     &-dark&-vertical &-opened{
-        background: @menu-dark-active-bg;
+        background: #222b31;
         .@{menu-prefix-cls}-submenu-title{
             background: @menu-dark-title;
         }
