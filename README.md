@@ -42,6 +42,7 @@
 
 - Dozens of useful and beautiful components.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Friendly API. It's made for people with any skill level.
 - Extensive documentation and demos.
 - It is quite beautiful.
@@ -65,15 +66,31 @@
 We recommend you create your project through [iView Cli](https://github.com/iview/iview-cli) or [iview-project](https://github.com/iview/iview-project). You can also use [vue-cli](https://github.com/vuejs/vue-cli).
 =======
 - Friendly API. It's made for people with all skill levels.
+=======
+- Friendly API. It's made for people with any skill level.
+>>>>>>> Squashed commit of the following:
 - Extensive documentation and demos.
 - It is quite beautiful.
-- Supports Vue.js 2 and Vue.js 1.
+- Supports both Vue.js 2 and Vue.js 1.
+
+## Who's using iView
+
+- [TalkingData](http://www.talkingdata.com/)
+- [Alibaba](http://www.alibaba.com/)
+- [JD](http://www.jd.com/)
+- [DiDi](http://www.didichuxing.com/)
+
+> If your company or products use iView, welcome to click [here](https://github.com/iview/iview/issues/2143) to leave a message.
 
 ## Install
 
-> Please install Webpack first
+> Please install Webpack first!
 
+<<<<<<< HEAD
 We recommend you install project through [iView Cli](https://github.com/iview/iview-cli) Or [iview-project](https://github.com/iview/iview-project). You can also use [vue-cli](https://github.com/vuejs/vue-cli).
+>>>>>>> Squashed commit of the following:
+=======
+We recommend you create your project through [iView Cli](https://github.com/iview/iview-cli) or [iview-project](https://github.com/iview/iview-project). You can also use [vue-cli](https://github.com/vuejs/vue-cli).
 >>>>>>> Squashed commit of the following:
 
 ### Install iView
@@ -83,10 +100,15 @@ Using npm:
 npm install iview --save
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Using a script tag for global use:
 =======
 Or using script tag for global use
+>>>>>>> Squashed commit of the following:
+=======
+
+Using a script tag for global use:
 >>>>>>> Squashed commit of the following:
 
 ```html
@@ -95,9 +117,13 @@ Or using script tag for global use
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 You can find more info [on the website](https://www.iviewui.com/docs/guide/install-en).
 =======
 More info [in the website](https://www.iviewui.com/docs/guide/install-en)
+>>>>>>> Squashed commit of the following:
+=======
+You can find more info [on the website](https://www.iviewui.com/docs/guide/install-en).
 >>>>>>> Squashed commit of the following:
 
 ## Usage
@@ -126,12 +152,16 @@ import 'iview/dist/styles/iview.css';
 ## Compatibility
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Squashed commit of the following:
 - Supports Vue.js 2.x
 - Supports Vue.js 1.x - [visit 1.0 docs](http://v1.iviewui.com/)
 - Supports SSR
 - Supports [Nuxt.js](https://nuxtjs.org/)
 - Supports [Electron](http://electron.atom.io/)
 - iView does not support IE8 or below since [Vue.js](https://vuejs.org/v2/guide/reactivity.html) uses `Object.defineProperty` to track changes which is not supported by these browsers.
+<<<<<<< HEAD
 
 ## Community
 
@@ -147,14 +177,22 @@ If you want to contribute or have questions or bugs to report:
 - Support [Nuxt.js](https://nuxtjs.org/)
 - [Electron](http://electron.atom.io/)
 - iView does not support IE8 or below since [Vue.js](https://vuejs.org/v2/guide/reactivity.html) is using Object.defineProperty which do not be supported by these browsers to track changes.
+=======
+>>>>>>> Squashed commit of the following:
 
 ## Community
 
-If you want to contribute, have questions or bugs to report:
+If you want to contribute or have questions or bugs to report:
 
+<<<<<<< HEAD
 **Questions:** you can find other users at [Gitter chat](https://gitter.im/iview/iview) or post on [StackOverflow using `[iview-ui]` tag](https://stackoverflow.com/questions/tagged/iview-ui)  
 **Bugs:** [file a issue here](https://github.com/iview/iview/issues) and please provide a example so we can help you better  
 **Contribute:** welcome to contact us in [Gitter chat](https://gitter.im/iview/iview), WeChat or via mail to `admin@aresn.com`. PRs welcome!
+>>>>>>> Squashed commit of the following:
+=======
+**Questions:** Find other users at the [Gitter chat](https://gitter.im/iview/iview) or post on [StackOverflow using `[iview-ui]` tag](https://stackoverflow.com/questions/tagged/iview-ui)  
+**Bugs:** [File a issue here](https://github.com/iview/iview/issues) - please provide a example so we can help you better  
+**Contribute:** Contact us in [Gitter chat](https://gitter.im/iview/iview), WeChat or via mail to `admin@aresn.com`. PRs welcome!
 >>>>>>> Squashed commit of the following:
 
 ## Major Contributors
