@@ -30,6 +30,7 @@
     position: relative;
     white-space: nowrap;
     margin-right: 8px;
+    color: @text-color;
     cursor: pointer;
     &-disabled{
         cursor: @cursor-disabled;
@@ -37,20 +38,8 @@
     //outline: none;
 }
 
-.dark .@{radio-prefix-cls} {
-    &:hover {
-        .@{radio-inner-prefix-cls} {
-            border-color: @input-border-color-dark;
-        }
-    }
-    &-inner {
-        background-color: #fff;
-        border: 1px solid @input-border-color-dark;
-
-        &:after {
-            background-color: @input-bg-dark;
-        }
-    }
+.dark .@{radio-prefix-cls}-wrapper {
+    color: @text-color-dark;
 }
 
 .@{radio-prefix-cls} {
@@ -64,7 +53,7 @@
     cursor: pointer;
     &:hover {
         .@{radio-inner-prefix-cls} {
-            border-color: #bcbcbc;
+            border-color: @primary-color;
         }
     }
     &-inner {
@@ -78,46 +67,25 @@
         border: 1px solid @border-color-base;
         border-radius: 50%;
         transition: all @transition-time @ease-in-out;
-
-        &:after {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            left: 2px;
-            top: 2px;
-            border-radius: @border-radius-base;
-            display: table;
-            border-top: 0;
-            border-left: 0;
-            content: ' ';
-            background-color: @primary-color;
-            opacity: 0;
-            transition: all @transition-time @ease-in-out;
-            transform: scale(0);
-        }
     }
     &-large{
         font-size: @font-size-base;
+
         & .@{radio-inner-prefix-cls}{
             width: 16px;
             height: 16px;
-            &:after{
-                width: 10px;
-                height: 10px;
-            }
         }
+
         &.@{radio-prefix-cls}-wrapper, & .@{radio-prefix-cls}-wrapper{
             font-size: @font-size-base;
         }
     }
     &-small{
+
         & .@{radio-inner-prefix-cls}{
             width: 12px;
             height: 12px;
-            &:after{
-                width: 6px;
-                height: 6px;
-            }
+            
         }
     }
 
@@ -133,30 +101,15 @@
     }
 }
 
-.dark .@{radio-prefix-cls}-checked {
-    .@{radio-inner-prefix-cls} {
-        border-color: @input-border-color-dark;
-    }
-    &:hover {
-        .@{radio-inner-prefix-cls} {
-            border-color: @input-border-color-dark;
-        }
-    }
-}
-
 // 选中状态
 .@{radio-prefix-cls}-checked {
     .@{radio-inner-prefix-cls} {
-        border-color: @primary-color;
-        &:after {
-            opacity: 1;
-            transform: scale(1);
-            transition: all @transition-time @ease-in-out;
-        }
+        border: 4px solid @primary-color;
     }
+
     &:hover {
         .@{radio-inner-prefix-cls} {
-            border-color: @primary-color;
+            border: 4px solid @primary-color;
         }
     }
 }
