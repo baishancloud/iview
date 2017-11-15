@@ -42,6 +42,10 @@
 // Border color
 @border-color-base            : #d3dce6;  // outside
 @border-color-base-dark       : #52626d;  // outside
+@border-color-hover           : #58b7ff;
+@border-color-hover-dark      : #53626d;
+@border-color-active          : #1d8ce0;
+@border-color-active          : #53626d;
 @border-color-split           : #e9eaec;  // inside
 @border-color-split-dark      : #52626d;  // inside
 
@@ -96,11 +100,11 @@
 @btn-group-border-dark  : shade(@primary-color-dark, 5%);
 
 
-@btn-disable-color      : #bbbec4;
+@btn-disable-color      : #d3dce6;
 @btn-disable-color-dark : #71818d;
-@btn-disable-bg         : @background-color-base;
-@btn-disable-border     : @border-color-base;
-@btn-disable-border-dark: @border-color-base-dark;
+@btn-disable-bg         : #f9fafc;
+@btn-disable-bg-dark    : #414d56;
+@btn-disable-border     : #eff2f7;
 
 @btn-default-color      : @text-color;
 @btn-default-color-dark : @text-color-dark;
@@ -109,13 +113,21 @@
 @btn-default-border     : @border-color-base;
 @btn-default-border-dark: @border-color-base-dark;
 
+@btn-success-bg         : #19ce66;
+@btn-success-hover      : #1bdb6d;
+@btn-success-active     : #10c25c;
+
 @btn-primary-color      : #fff;
-@btn-primary-bg         : @primary-color;
 @btn-primary-bg         : @primary-color-blue;
+@btn-primary-hover      : #58b7ff;
+@btn-primary-active     : #1d8ce0;
 
 @btn-ghost-color        : @text-color;
 @btn-ghost-color-dark   : @text-color-dark;
-@btn-ghost-bg           : transparent;
+@btn-ghost-bg           : #fff;
+@btn-ghost-bg-dark      : #414d56;
+@btn-ghost-bg-hover     : #556470;
+@btn-ghost-bg-active    : #343e45;
 @btn-ghost-border       : @border-color-base;
 @btn-ghost-border-dark  : @border-color-base-dark;
 

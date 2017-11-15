@@ -71,7 +71,7 @@
         &:focus,
         &:active,
         &.active {
-            .button-color(@btn-disable-color-dark; @btn-disable-border-dark; @btn-disable-border-dark);
+            .button-color(@btn-disable-color-dark; @btn-disable-bg-dark; @btn-disable-bg-dark);
         }
     }
 }
@@ -219,11 +219,14 @@
 .btn-primary() {
     .button-variant(@btn-primary-color; @btn-primary-bg; @primary-color);
 
-    &:hover,
-    //&:focus,
+    &:hover
+    //&:focus
+    {
+        .button-color(white; @btn-primary-hover; @btn-primary-hover;);
+    }
     &:active,
     &.active {
-        color: @btn-primary-color;
+        .button-color(white; @btn-primary-active; @btn-primary-active);
     }
     .active-btn-color(@primary-color);
 }
@@ -242,6 +245,21 @@
         .button-color(shade(@primary-color, 5%); @btn-ghost-bg; shade(@primary-color, 5%));
     }
     .active-btn-color(@primary-color);
+}
+
+// Ghost
+.btn-success() {
+    .button-variant(@btn-primary-color; @btn-success-bg; @btn-success-bg);
+
+    &:hover
+    //&:focus
+    {
+        .button-color(#fff; @btn-success-hover; @btn-success-hover);
+    }
+    &:active,
+    &.active {
+        .button-color(#fff; @btn-success-active; @btn-success-active);
+    }
 }
 
 // Dashed
@@ -459,16 +477,31 @@
 
 // Ghost-dark
 .btn-ghost-dark() {
-    .button-variant-dark(#000, @btn-ghost-bg, @btn-ghost-border-dark);
+    .button-variant-dark(#fff, @btn-ghost-bg-dark, @btn-ghost-border-dark);
 
     &:hover
     //&:focus
     {
-        .button-color(tint(@primary-color, 20%); @btn-ghost-bg; tint(@primary-color, 20%));
+        .button-color(#fff; @btn-ghost-bg-hover; @border-color-base-dark);
     }
     &:active,
     &.active {
-        .button-color(shade(@primary-color, 5%); @btn-ghost-bg; shade(@primary-color, 5%));
+        .button-color(#fff; @btn-ghost-bg-active; @border-color-base-dark);
+    }
+}
+
+// Ghost
+.btn-success-dark() {
+    .button-variant-dark(@btn-primary-color; @btn-success-bg; @btn-success-bg);
+
+    &:hover
+    //&:focus
+    {
+        .button-color(#fff; @btn-success-hover; @btn-success-hover);
+    }
+    &:active,
+    &.active {
+        .button-color(#fff; @btn-success-active; @btn-success-active);
     }
 }
 
