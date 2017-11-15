@@ -3,6 +3,19 @@
 
 .dark .@{select-dropdown-prefix-cls} {
     background-color: #414d56;
+    &::-webkit-scrollbar {
+        background: @selected-bg-dark;
+        width: 10px;
+        height: 10px;
+        padding: 2px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: @tabs-card-bar-tab-active-bg;
+        border-radius:4px;
+    }
+    &::-webkit-scrollbar-corner {
+        background: @selected-bg-dark;
+    }
 }
 
 .@{select-dropdown-prefix-cls} {
