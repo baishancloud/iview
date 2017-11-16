@@ -140,7 +140,75 @@ span.@{radio-prefix-cls} + * {
     margin-right: 2px;
 }
 
-// 按钮样式 - Button style
+.dark .@{radio-group-button-prefix-cls} {
+
+    .@{radio-prefix-cls}-wrapper {
+        color: #c0ccda;
+        border: 1px solid @border-color-base-dark;
+        background: #414d56;
+
+        &:before {
+            background: @border-color-base-dark;
+        }
+
+        &:first-child {
+            border-left: 1px solid @border-color-base-dark;
+        }
+
+        &:hover {
+            color: @primary-color;
+        }
+
+        &-checked {
+            background: #313a41;
+            border-color: @border-color-base-dark;
+            color: #fff;
+            box-shadow: -1px 0 0 0 @border-color-base-dark;
+
+            &:first-child {
+                border-color: @border-color-base-dark;
+            }
+
+            &:hover {
+                border-color: tint(@border-color-base-dark, 20%);
+                box-shadow: -1px 0 0 0 tint(@border-color-base-dark, 20%);
+                color: tint(#fff, 20%);
+            }
+
+            &:active {
+                border-color: shade(@border-color-base-dark, 5%);
+                box-shadow: -1px 0 0 0 shade(@border-color-base-dark, 5%);
+                color: shade(#fff, 5%);
+            }
+        }
+
+        &-disabled {
+            border-color: @border-color-base-dark;
+            background-color: @background-button-color-dark;
+            cursor: @cursor-disabled;
+            color: #71818d;
+
+            &:first-child,
+            &:hover {
+                border-color: @border-color-base-dark;
+                background-color: @background-button-color-dark;
+                color: #71818d;
+            }
+            &:first-child {
+                border-left-color: @border-color-base-dark;
+            }
+        }
+
+        &-disabled.@{radio-prefix-cls}-wrapper-checked {
+            color: #71818d;
+            background-color: @background-button-color-dark;
+            border-color: @border-color-base-dark;
+            box-shadow: none!important;
+        }
+    }
+}
+
+// 按钮样式
 .@{radio-group-button-prefix-cls} {
     font-size: 0;
     -webkit-text-size-adjust:none;
