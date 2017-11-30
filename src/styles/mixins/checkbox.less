@@ -139,17 +139,20 @@
     }
 
     // 禁用
+    .@{checkbox-prefix-cls}-wrapper-disabled{
+        color: @checkbox-disabled-color-dark;
+    }
     .@{checkbox-prefix-cls}-disabled {
         &.@{checkbox-prefix-cls}-checked {
             &:hover {
                 .@{checkbox-inner-prefix-cls} {
-                    border-color: @checkbox-border-color-dark;
+                    border-color: @checkbox-disabled-color-dark;
                 }
             }
 
             .@{checkbox-inner-prefix-cls} {
                 background-color: #777;
-                border-color: @checkbox-border-color-dark;
+                border-color: @checkbox-disabled-color-dark;
 
                 &:after {
                     animation-name: none;
@@ -160,16 +163,16 @@
 
         &:hover {
             .@{checkbox-inner-prefix-cls} {
-                border-color: @checkbox-border-color-dark;
+                border-color: @checkbox-disabled-color-dark;
             }
         }
 
         .@{checkbox-inner-prefix-cls} {
-            border-color: @checkbox-border-color-dark;
-            background-color: #777;
+            border-color: @checkbox-disabled-color-dark;
+            background-color: #414d56;
             &:after {
                 animation-name: none;
-                border-color: @checkbox-border-color-dark;
+                border-color: @checkbox-disabled-color-dark;
             }
         }
 
