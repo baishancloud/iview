@@ -1,34 +1,53 @@
 @switch-prefix-cls: ~"@{css-prefix}switch";
 @switch-prefix-cls-only-text: ~"@{css-prefix}switch-only-text";
 
-.dark .@{switch-prefix-cls} {
-    border: 1px solid #ccc;
-    background-color: #414e55;
+.dark .@{switch-prefix-cls},
+.dark .@{switch-prefix-cls-only-text} {
+    border: 1px solid #52626d;
+    background-color: #414d56;
 
     &-inner {
-        color: #fff;
+        color: @text-color-dark;
     }
 
     &:after {
         content: '';
-        background-color: #fff;
+        background-color: @text-color-dark;
     }
 
     &-checked {
-        border-color: @primary-color;
+        border-color: #1C97F8;
         background-color: @primary-color;
+        .@{switch-prefix-cls}-inner {
+            color: #fff;
+        }
+        .@{switch-prefix-cls-only-text}-inner {
+            color: #fff;
+        }
+    
+        &:after {
+            content: '';
+            background-color: #fff;
+        }
     }
 
     &-disabled {
-        background: #f3f3f3;
-        border-color: #f3f3f3;
+        background: #414d56;
+        border-color: #52626d;
 
         &:after {
             background: #ccc;
         }
 
         .@{switch-prefix-cls}-inner {
-            color: #ccc;
+            color: @btn-disable-color-dark;
+        }
+        .@{switch-prefix-cls-only-text}-inner {
+            color: @btn-disable-color-dark;
+        }
+        &:after {
+            content: '';
+            background-color: @btn-disable-color-dark;
         }
     }
 }
