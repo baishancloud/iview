@@ -1,5 +1,6 @@
 @modal-prefix-cls: ~"@{css-prefix}modal";
 @confirm-prefix-cls: ~"@{css-prefix}modal-confirm";
+@confirm-head-bg-color-dark: #293137;
 
 .dark .@{modal-prefix-cls} {
     &-mask {
@@ -30,10 +31,15 @@
         &-title {
             color: @title-color-dark;
         }
+        background-color: @confirm-head-bg-color-dark;
     }
 
     &-body{
         color: @text-color-dark;
+    }
+
+    &-footer {
+        background-color: @confirm-head-bg-color-dark;
     }
 }
 
@@ -124,8 +130,10 @@
 
 .@{confirm-prefix-cls} {
     padding: 0 4px;
+    margin: -20px;
     &-head {
-
+        padding: 7px 16px;
+        background-color: @primary-color;
         &-title {
             display: inline-block;
             font-size: @font-size-base;
@@ -136,8 +144,9 @@
 
     &-body{
         margin-top: 6px;
-        padding-left: 48px;
+        padding-left: 58px;
         padding-top: 18px;
+        padding-right: 28px;
         font-size: @font-size-small;
         color: @text-color;
         position: relative;
@@ -148,10 +157,10 @@
         }
 
         &-icon {
-            font-size: 36px;
+            font-size: 22px;
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 11px;
+            left: 30px;
 
             &-info {
                 color: @primary-color;
@@ -174,10 +183,14 @@
     &-footer{
         margin-top: 40px;
         text-align: right;
-
+        padding: 7px 16px;
+        background-color: @modal-footer-bg;
         button + button {
             margin-left: 8px;
             margin-bottom: 0;
+        }
+        button {
+            min-width: 58px;
         }
     }
 }

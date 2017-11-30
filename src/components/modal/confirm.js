@@ -12,7 +12,7 @@ Modal.newInstance = properties => {
         mixins: [ Locale ],
         data: Object.assign({}, _props, {
             visible: false,
-            width: 416,
+            width: 450,
             title: '',
             body: '',
             iconType: '',
@@ -30,8 +30,7 @@ Modal.newInstance = properties => {
             if (this.showCancel) {
                 footerVNodes.push(h(Button, {
                     props: {
-                        type: 'text',
-                        size: 'large'
+                        size: 'small'
                     },
                     on: {
                         click: this.cancel
@@ -41,7 +40,7 @@ Modal.newInstance = properties => {
             footerVNodes.push(h(Button, {
                 props: {
                     type: 'primary',
-                    size: 'large',
+                    size: 'small',
                     loading: this.buttonLoading
                 },
                 on: {
@@ -204,7 +203,7 @@ Modal.newInstance = properties => {
                     modal.$parent.iconName = 'close-circled';
                     break;
                 case 'confirm':
-                    modal.$parent.iconName = 'help-circled';
+                    modal.$parent.iconName = 'alert-circled';
                     break;
             }
 
