@@ -278,3 +278,102 @@
         }
     }
 }
+
+.dark .@{page-prefix-cls} {
+    &-item {
+        background-color: @btn-ghost-bg-dark;
+        border: 1px solid @border-color-base-dark;
+
+        a {
+            color: @text-color-dark;
+        }
+
+        &:hover {
+            background-color: @btn-ghost-bg-hover;
+            border-color: @border-color-base-dark;
+            a {
+                color: #fff;
+            }
+        }
+
+        &-active {
+            background-color: @primary-color;
+            border-color: @primary-color;
+
+            a, &:hover a {
+                color: #fff;
+            }
+        }
+    }
+
+    &-item-jump-prev, &-item-jump-next {
+        &:after {
+            color: @text-color-dark;
+        }
+
+    }
+
+    &-prev,
+    &-next,
+    &-item-jump-prev,
+    &-item-jump-next {
+        color: @text-color-dark;
+        border: 1px solid @border-color-base-dark;
+    }
+
+    &-prev,
+    &-next {
+        background-color: @btn-ghost-bg-dark;
+
+        a {
+            color: @text-color-dark;
+        }
+
+        &:hover {
+            border-color: @btn-ghost-bg-hover;
+            background-color: @btn-ghost-bg-hover;
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    &-disabled {
+        background-color: @disabled-bg-dark;
+        a {
+            color: @disabled-text-color-dark;
+        }
+        &:hover {
+            border-color: @border-color-base-dark;
+            background-color: @disabled-bg-dark;
+            a {
+                color: @disabled-text-color-dark;
+            }
+        }
+    }
+
+    &-options {
+
+        &-elevator {
+
+            input {
+                .input-dark;
+            }
+        }
+    }
+
+    &-simple{
+        &-pager {
+            input {
+                background-color: @btn-ghost-bg-dark;
+                border-color: @border-color-base-dark;
+                color: @text-color-dark;
+                &:hover {
+                    background-color: @btn-ghost-bg-hover;
+                    border-color: @border-color-base-dark;
+                    color: #fff;
+                }
+            }
+        }
+    } 
+}

@@ -40,6 +40,7 @@
             :percent="75"
             stroke-linecap="square"
             stroke-color="#43a300"
+            trail-color="#a00"
             :hoverBorder="10">
         <div class="demo-circle-custom">
             <h1>{{ 42001776 }}</h1>
