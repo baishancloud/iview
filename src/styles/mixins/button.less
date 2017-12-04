@@ -477,20 +477,20 @@
 
 // Ghost-dark
 .btn-ghost-dark() {
-    .button-variant-dark(#fff, @btn-ghost-bg-dark, @btn-ghost-border-dark);
+    .button-variant-dark(@text-color-dark, @btn-ghost-bg-dark, @btn-ghost-border-dark);
 
     &:hover
     //&:focus
     {
-        .button-color(#fff; @btn-ghost-bg-hover; @border-color-base-dark);
+        .button-color(@text-color-dark; @btn-ghost-bg-hover; @border-color-base-dark);
     }
     &:active,
     &.active {
-        .button-color(#fff; @btn-ghost-bg-active; @border-color-base-dark);
+        .button-color(@text-color-dark; @btn-ghost-bg-active; @border-color-base-dark);
     }
 }
 
-// Ghost
+// success
 .btn-success-dark() {
     .button-variant-dark(@btn-primary-color; @btn-success-bg; @btn-success-bg);
 
