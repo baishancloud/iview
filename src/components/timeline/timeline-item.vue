@@ -1,5 +1,6 @@
 <template>
     <li :class="itemClasses">
+        <div :class="beforeClass"><slot name="before"></slot></div>
         <div :class="tailClasses"></div>
         <div :class="headClasses" :style="customColor" ref="dot"><slot name="dot"></slot></div>
         <div :class="contentClasses">
@@ -32,6 +33,9 @@
             },
             tailClasses () {
                 return `${prefixCls}-item-tail`;
+            },
+            beforeClass () {
+                return `${prefixCls}-item-before`;
             },
             headClasses () {
                 return [

@@ -1,5 +1,9 @@
 @timeline-prefix-cls: ~"@{css-prefix}timeline";
-@timeline-color: @border-color-split;
+@timeline-text-color: #99a9bf;
+@timeline-tail-color: #ECF1F5;
+@timeline-head-bg-color: #20a0ff;
+@timeline-text-color-dark: @title-color-dark;
+@timeline-tail-color-dark: #293137;
 
 .@{timeline-prefix-cls} {
     list-style: none;
@@ -12,11 +16,19 @@
         list-style: none;
         position: relative;
 
+        &-before {
+            position: absolute;
+            left: 3px;
+            top: -6px;
+            color: @timeline-text-color;
+            font-size: 12px;
+        }
+
         &-tail {
             height: 100%;
-            border-left: 1px solid @timeline-color;
+            border-left: 3px solid @timeline-tail-color;
             position: absolute;
-            left: 6px;
+            left: 80px;
             top: 0;
         }
 
@@ -25,12 +37,13 @@
         }
 
         &-head {
-            width: 13px;
-            height: 13px;
-            background-color: #fff;
+            width: 6px;
+            height: 6px;
+            background-color: @timeline-head-bg-color;
             border-radius: 50%;
             border: 1px solid transparent;
             position: absolute;
+            left: 79px;
 
             &-blue {
                 border-color: @primary-color;
@@ -57,15 +70,18 @@
             border-radius: 0;
             font-size: @font-size-base;
             position: absolute;
-            left: -13px;
+            left: 62px;
+            background: transparent;
             transform: translateY(-50%);
         }
 
         &-content {
-            padding: 1px 1px 10px 24px;
+            padding: 1px 1px 10px 98px;
             font-size: @font-size-small;
             position: relative;
-            top: -3px;
+            top: -6px;
+            color: @timeline-text-color;
+            font-size: 12px;
         }
 
         &:last-child {
@@ -78,10 +94,34 @@
     &&-pending &-item:nth-last-of-type(2) {
 
         .@{timeline-prefix-cls}-item-tail {
-            border-left: 1px dotted @timeline-color;
+            border-left: 3px dotted @timeline-tail-color;
         }
         .@{timeline-prefix-cls}-item-content {
             min-height: 48px;
+        }
+    }
+}
+
+.dark {
+    .@{timeline-prefix-cls} {
+        &-item {
+    
+            &-before {
+                color: @timeline-text-color-dark;
+            }
+
+            &-tail {
+                border-color: @timeline-tail-color-dark;
+            }
+
+            &-content {
+                color: @timeline-text-color-dark;
+            }
+        }
+    }
+    .@{timeline-prefix-cls}.@{timeline-prefix-cls}-pending .@{timeline-prefix-cls}-item:nth-last-of-type(2) {
+        .@{timeline-prefix-cls}-item-tail {
+            border-color: @timeline-tail-color-dark;
         }
     }
 }
