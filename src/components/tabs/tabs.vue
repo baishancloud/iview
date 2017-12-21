@@ -354,15 +354,8 @@
         },
         beforeDestroy() {
             this.observer.removeListener(this.$refs.navWrap, this.handleResize);
-<<<<<<< HEAD
-<<<<<<< HEAD
             if (this.mutationObserver) this.mutationObserver.disconnect();
-=======
             this.mutationObserver.disconnect();
->>>>>>> Squashed commit of the following:
-=======
-            if (this.mutationObserver) this.mutationObserver.disconnect();
->>>>>>> Squashed commit of the following:
         }
     };
 </script>

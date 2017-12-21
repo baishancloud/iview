@@ -139,40 +139,37 @@
     }
 
     // 禁用
-    .@{checkbox-prefix-cls}-wrapper-disabled{
-        color: @checkbox-disabled-color-dark;
-    }
     .@{checkbox-prefix-cls}-disabled {
         &.@{checkbox-prefix-cls}-checked {
             &:hover {
                 .@{checkbox-inner-prefix-cls} {
-                    border-color: @checkbox-disabled-color-dark;
+                    border-color: @checkbox-border-color-dark;
                 }
             }
 
             .@{checkbox-inner-prefix-cls} {
-                border-color: @checkbox-disabled-color-dark;
-                background-color: #414d56;
+                background-color: #777;
+                border-color: @checkbox-border-color-dark;
 
                 &:after {
                     animation-name: none;
-                    border-color: @checkbox-disabled-color-dark;
+                    border-color: #999;
                 }
             }
         }
 
         &:hover {
             .@{checkbox-inner-prefix-cls} {
-                border-color: @checkbox-disabled-color-dark;
+                border-color: @checkbox-border-color-dark;
             }
         }
 
         .@{checkbox-inner-prefix-cls} {
-            border-color: @checkbox-disabled-color-dark;
-            background-color: #414d56;
+            border-color: @checkbox-border-color-dark;
+            background-color: #777;
             &:after {
                 animation-name: none;
-                border-color: @checkbox-disabled-color-dark;
+                border-color: @checkbox-border-color-dark;
             }
         }
 
@@ -473,7 +470,6 @@
                 border-color: @input-placeholder-color;
             }
         }
-<<<<<<< HEAD
     }
     .@{checkbox-prefix-cls}-large {
         .@{checkbox-prefix-cls}-indeterminate{
@@ -490,8 +486,6 @@
                 top: 4px;
             }
         }
-=======
->>>>>>> Squashed commit of the following:
     }
     .@{checkbox-prefix-cls}-large {
         .@{checkbox-prefix-cls}-indeterminate{
