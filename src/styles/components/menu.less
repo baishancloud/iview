@@ -50,7 +50,32 @@
         background: #fff;
     }
     &-dark{
-        background: @menu-dark-title;
+        background: #2e373e;
+        .@{menu-prefix-cls}-item{
+            color: #a1acb5 !important;
+        }
+        .@{menu-prefix-cls}-item-active{
+            background: #353f47;
+            color: #fff !important;
+        }
+        .@{menu-prefix-cls}-submenu,
+        .@{menu-prefix-cls}-opened{
+            .@{menu-prefix-cls}-submenu-title{
+                background: #2e373e !important;
+                color: #a1acb5 !important;
+            }
+            ul{
+                background-color: #222b31;
+            }
+            .@{menu-prefix-cls}-item{
+                color: #71818d !important;
+                font-size: 12px;
+            }
+            .@{menu-prefix-cls}-item-active{
+                background: #353f47;
+                color: #fff !important;
+            }
+        }
     }
     &-primary{
         background: @primary-color;
