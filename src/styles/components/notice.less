@@ -36,8 +36,15 @@
             color: #999;
             outline: none;
 
-            i{
-                .close-base(-3px);
+            i {
+                font-size: 22px;
+                color: #999;
+                transition: color @transition-time ease;
+                position: relative;
+                top: -3px;
+                &:hover {
+                    font-weight: bolder;
+                }
             }
         }
 
@@ -61,7 +68,6 @@
     &-title {
         font-size: @font-size-base;
         line-height: @font-size-base + 3;  //fixed the bug that the bottom of some letters were hidden just like 'g'
-        color: @title-color;
         padding-right: 10px;
         overflow: hidden;
         text-overflow: ellipsis;
