@@ -51,31 +51,6 @@
     }
     &-dark{
         background: #2e373e;
-        .@{menu-prefix-cls}-item{
-            color: #a1acb5 !important;
-        }
-        .@{menu-prefix-cls}-item-active{
-            background: #353f47;
-            color: #fff !important;
-        }
-        .@{menu-prefix-cls}-submenu,
-        .@{menu-prefix-cls}-opened{
-            .@{menu-prefix-cls}-submenu-title{
-                background: #2e373e !important;
-                color: #a1acb5 !important;
-            }
-            ul{
-                background-color: #222b31;
-            }
-            .@{menu-prefix-cls}-item{
-                color: #71818d !important;
-                font-size: 12px;
-            }
-            .@{menu-prefix-cls}-item-active{
-                background: #353f47;
-                color: #fff !important;
-            }
-        }
     }
     &-primary{
         background: @primary-color;
@@ -228,12 +203,6 @@
 
     &-dark&-vertical &-item, &-dark&-vertical &-submenu-title {
         color: @menu-dark-subsidiary-color;
-        &-active:not(.@{menu-prefix-cls}-submenu),
-        &-active:not(.@{menu-prefix-cls}-submenu):hover {
-            border-left: 4px solid #39f;
-            border-right: 0;
-            background: @menu-dark-active-bg;
-        }
         &:hover{
             color: #fff;
             background: @menu-dark-title;
@@ -242,7 +211,6 @@
     &-dark&-vertical &-submenu &-item{
         &:hover{
             color: #fff;
-            background: @menu-dark-active-bg;
         }
         &-active,&-active:hover{
             border-right: none;
@@ -266,6 +234,57 @@
             .@{menu-prefix-cls}-submenu-title{
                 background: transparent;
             }
+        }
+    }
+
+    &-dark&-vertical{
+        .@{menu-prefix-cls}-item,
+        .@{menu-prefix-cls}-submenu{
+            color: @menu-color-dark;
+            background-color: @menu-item-bg-dark;
+            font-size: 14px;
+        }
+        .@{menu-prefix-cls}-item:hover,
+        .@{menu-prefix-cls}-submenu:hover .@{menu-prefix-cls}-submenu-title{
+            color: #fff;
+            background-color: @menu-item-bg-dark;
+        }
+        .@{menu-prefix-cls}-item-active:not(.@{menu-prefix-cls}-submenu),
+        .@{menu-prefix-cls}-opened .@{menu-prefix-cls}-submenu-title{
+            background-color: @menu-item-bg-dark;
+            color: #fff;
+            border-left: 4px solid #1e9fff;
+        }
+
+        .@{menu-prefix-cls}-submenu{
+            .@{menu-prefix-cls}-item{
+                color: @menu-color-dark;
+                background-color: @menu-item-sub-bg-dark;
+                font-size: 12px;
+                line-height: 18px;
+            }
+            .@{menu-prefix-cls}-item:hover{
+                color: #fff;
+            }
+            .@{menu-prefix-cls}-item-active{
+                color: #fff;
+                background-color: @menu-item-sub-active-bg-dark;
+                border: none;
+            }
+
+            .@{menu-prefix-cls}-submenu-title{
+                padding-right:12px;
+            }
+        }
+
+        .@{menu-prefix-cls}-item,
+        .@{menu-prefix-cls}-submenu{
+            line-height: 20px;
+        }
+
+        .@{menu-prefix-cls}-item,
+        .@{menu-prefix-cls}-submenu-title{
+            padding: 14px 20px;
         }
     }
 }
