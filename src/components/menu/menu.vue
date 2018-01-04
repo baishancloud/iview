@@ -1,5 +1,8 @@
 <template>
-    <ul :class="classes" :style="styles"><slot></slot></ul>
+    <ul :class="classes" :style="styles">
+        <slot></slot>
+        <li :class="toggleClasses" @click="miniToggle"></li>
+    </ul>
 </template>
 <script>
     import { oneOf, findComponentsDownward, findBrothersComponents } from '../../utils/assist';
@@ -43,7 +46,8 @@
         },
         data () {
             return {
-                currentActiveName: this.activeName
+                currentActiveName: this.activeName,
+                isMini: false
             };
         },
         computed: {
@@ -55,16 +59,21 @@
                     `${prefixCls}`,
                     `${prefixCls}-${theme}`,
                     {
-                        [`${prefixCls}-${this.mode}`]: this.mode
+                        [`${prefixCls}-${this.mode}`]: this.mode,
+                        [`${prefixCls}-mini`]: this.isMini
                     }
                 ];
             },
             styles () {
                 let style = {};
 
-                if (this.mode === 'vertical') style.width = this.width;
+                if (this.mode === 'vertical' && !this.isMini) style.width = this.width;
+                if (this.isMini) style.width = '60px';
 
                 return style;
+            },
+            toggleClasses () {
+                return `${prefixCls}-toggle`;
             }
         },
         methods: {
@@ -102,6 +111,10 @@
                         if (this.openNames.indexOf(item.name) > -1) item.opened = true;
                     });
                 }
+            },
+            miniToggle () {
+                this.isMini = !this.isMini;
+                this.$emit('on-mini-change', this.isMini);
             }
         },
         mounted () {

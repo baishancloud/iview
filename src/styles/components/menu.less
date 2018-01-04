@@ -159,9 +159,10 @@
     }
 
     &-vertical &-submenu-title-icon{
-        float: right;
-        position: relative;
-        top: 4px;
+        position: absolute;
+        top: 50%;
+        margin-top: -7px;
+        right: 8px;
     }
     &-submenu-title-icon {
         transition: transform @transition-time @ease-in-out;
@@ -236,8 +237,9 @@
             }
         }
     }
-
     &-dark&-vertical{
+        transition: width .4s ease;
+
         .@{menu-prefix-cls}-item,
         .@{menu-prefix-cls}-submenu{
             color: @menu-color-dark;
@@ -250,7 +252,8 @@
             background-color: @menu-item-bg-dark;
         }
         .@{menu-prefix-cls}-item-active:not(.@{menu-prefix-cls}-submenu),
-        .@{menu-prefix-cls}-opened .@{menu-prefix-cls}-submenu-title{
+        .@{menu-prefix-cls}-opened .@{menu-prefix-cls}-submenu-title,
+        .@{menu-prefix-cls}-item-active .@{menu-prefix-cls}-submenu-title{
             background-color: @menu-item-bg-dark;
             color: #fff;
             border-left: 4px solid #1e9fff;
@@ -285,7 +288,111 @@
         .@{menu-prefix-cls}-item,
         .@{menu-prefix-cls}-submenu-title{
             padding: 14px 20px;
+            overflow: hidden;
+            white-space:nowrap;
         }
+    }
+
+    &-dark&-vertical&-mini{
+
+        .@{menu-prefix-cls}-item,
+        .@{menu-prefix-cls}-submenu-title{
+            padding: 14px 0;
+            position: relative;
+            text-align: center;
+            
+            img {
+                transition: transform 0.4s ease 0.2s;
+                transform: translateX(0)
+            }
+            span {
+                position: absolute;
+                left: -60px;
+                top: 0;
+                line-height: 48px;
+                transition: left 0.4s ease;
+                font-size: 12px;
+                padding-left: 4px;
+            }
+            i {
+                display: none;
+            }
+        }
+        
+        .@{menu-prefix-cls}-item:hover,
+        .@{menu-prefix-cls}-submenu:hover .@{menu-prefix-cls}-submenu-title,
+        .@{menu-prefix-cls}-item-active:not(.@{menu-prefix-cls}-submenu),
+        .@{menu-prefix-cls}-opened .@{menu-prefix-cls}-submenu-title,
+        .@{menu-prefix-cls}-item-active .@{menu-prefix-cls}-submenu-title
+        {
+            padding: 14px 0;
+            img {
+                transform: translateX(60px)
+            }
+            span{
+                left: 0;
+            }
+        }
+
+        .@{menu-prefix-cls}-submenu{
+            position: relative;
+            ul {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 60px;
+                width: 150px;
+                padding: 10px 0;
+                border-radius: 4px;
+                background: #222b31;
+                transform: translateX(-100%);
+
+                .@{menu-prefix-cls}-item{
+                    padding: 14px 20px;
+                    background-color: transparent;
+
+                    span {
+                        position: static;
+                        line-height: 20px;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+        .@{menu-prefix-cls}-opened{
+            position: relative;
+
+            ul {
+                display: block;
+                transform: translateX(5px);
+
+                .@{menu-prefix-cls}-item-active {
+                    background-color: #353f47;
+                }
+                
+            }
+        }
+        .@{menu-prefix-cls}-toggle {
+            background: url('../../../assets/menu-toggle-r.svg') center center no-repeat #424D56;
+        }
+        .@{menu-prefix-cls}-toggle:hover {
+            background: url('../../../assets/menu-toggle-rb.svg') center center no-repeat #4BA0F8;
+        }
+    }
+    &-toggle {
+        position: absolute;
+        margin-left: 100%;
+        left: 0;
+        top: 50%;
+        margin-top: -21px;
+        background: url('../../../assets/menu-toggle-l.svg') center center no-repeat #424D56;
+        cursor: pointer;
+        width: 16px;
+        height: 42px;
+        text-align: center;
+    }
+    &-toggle:hover {
+        background: url('../../../assets/menu-toggle-lb.svg') center center no-repeat #4BA0F8;
     }
 }
 .select-item(@menu-prefix-cls, @menu-dropdown-item-prefix-cls);
