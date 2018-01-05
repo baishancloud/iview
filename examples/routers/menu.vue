@@ -41,6 +41,41 @@
 </template>
 <script>
     export default {
+<<<<<<< HEAD
 
     }
+=======
+        data () {
+            return {
+                theme1: 'dark',
+                value4: '',
+                openArr: ['3', '3-3', '3-3-3']
+            };
+        },
+        methods: {
+            handleSelect (name) {
+                // console.log(name);
+                return name;
+            },
+            handleOpen (openArr) {
+                // console.log(openArr);
+                return openArr;
+            }
+<<<<<<< HEAD
+        }
+    };
+=======
+        };
+    },
+    computed:{
+        toggleTop () {
+            return this.$el ?  `${(this.$el.clientHeight / 2)}px` : '400px';
+        }
+    },
+    created () {
+        console.log(this.$el);
+    }
+}
+>>>>>>> nimi menu bugfix
+>>>>>>> nimi menu bugfix
 </script>

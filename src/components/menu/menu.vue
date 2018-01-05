@@ -48,7 +48,11 @@
                 type: String,
                 default: '240px'
             },
-            imgSrc: {}
+            imgSrc: {},
+            toggleTop: {
+                type: String,
+                default: '50%'
+            }
         },
         data () {
             return {
@@ -82,7 +86,7 @@
                 return `${prefixCls}-toggle`;
             },
             toggleStyles () {
-                return { top: `${this.$parent.$el.clientHeight / 2}px` };
+                return { top: `${this.toggleTop}` };
             }
         },
         methods: {
