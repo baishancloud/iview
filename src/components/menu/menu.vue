@@ -1,7 +1,12 @@
 <template>
     <ul :class="classes" :style="styles">
         <slot></slot>
-        <li :class="toggleClasses" @click="miniToggle"></li>
+        <li :class="toggleClasses" @click="miniToggle">
+            <img class="left" :src="imgSrc.left">
+            <img class="right" :src="imgSrc.right">
+            <img class="leftBlue" :src="imgSrc.leftBlue">
+            <img class="rightBlue" :src="imgSrc.rightBlue">
+        </li>
     </ul>
 </template>
 <script>
@@ -42,7 +47,8 @@
             width: {
                 type: String,
                 default: '240px'
-            }
+            },
+            imgSrc: {}
         },
         data () {
             return {

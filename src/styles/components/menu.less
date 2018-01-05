@@ -1,6 +1,5 @@
 @menu-prefix-cls: ~"@{css-prefix}menu";
 @menu-dropdown-item-prefix-cls: ~"@{menu-prefix-cls}-horizontal .@{menu-prefix-cls}-submenu .@{select-dropdown-prefix-cls} .@{menu-prefix-cls}-item";
-
 .@{menu-prefix-cls} {
     display: block;
     margin: 0;
@@ -372,11 +371,26 @@
                 
             }
         }
+
         .@{menu-prefix-cls}-toggle {
-            background: url('../../../assets/menu-toggle-r.svg') center center no-repeat #424D56;
+            img.leftBlue,
+            img.left,
+            img.rightBlue,{
+                display: none;
+            }
+            img.right{
+                display: block;
+            }
         }
         .@{menu-prefix-cls}-toggle:hover {
-            background: url('../../../assets/menu-toggle-rb.svg') center center no-repeat #4BA0F8;
+            img.left,
+            img.right,
+            img.leftBlue,{
+                display: none;
+            }
+            img.rightBlue{
+                display: block;
+            }
         }
     }
     &-toggle {
@@ -385,14 +399,36 @@
         left: 0;
         top: 50%;
         margin-top: -21px;
-        background: url('../../../assets/menu-toggle-l.svg') center center no-repeat #424D56;
+        background: #424D56;
         cursor: pointer;
         width: 16px;
         height: 42px;
         text-align: center;
+        img{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        img.leftBlue,
+        img.right,
+        img.rightBlue,{
+            display: none;
+        }
+        img.left{
+            display: block;
+        }
     }
     &-toggle:hover {
-        background: url('../../../assets/menu-toggle-lb.svg') center center no-repeat #4BA0F8;
+        background-color: #4BA0F8;
+        img.left,
+        img.right,
+        img.rightBlue,{
+            display: none;
+        }
+        img.leftBlue{
+            display: block;
+        }
     }
 }
 .select-item(@menu-prefix-cls, @menu-dropdown-item-prefix-cls);
