@@ -1,7 +1,7 @@
 <template>
     <ul :class="classes" :style="styles">
         <slot></slot>
-        <li :class="toggleClasses" @click="miniToggle">
+        <li :class="toggleClasses" @click="miniToggle" :style="toggleStyles">
             <img class="left" :src="imgSrc.left">
             <img class="right" :src="imgSrc.right">
             <img class="leftBlue" :src="imgSrc.leftBlue">
@@ -80,6 +80,9 @@
             },
             toggleClasses () {
                 return `${prefixCls}-toggle`;
+            },
+            toggleStyles () {
+                return { top: `${this.$parent.$el.clientHeight / 2}px` };
             }
         },
         methods: {
