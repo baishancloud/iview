@@ -355,7 +355,6 @@
         beforeDestroy() {
             this.observer.removeListener(this.$refs.navWrap, this.handleResize);
             if (this.mutationObserver) this.mutationObserver.disconnect();
-            this.mutationObserver.disconnect();
         }
     };
 </script>
