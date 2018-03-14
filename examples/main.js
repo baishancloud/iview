@@ -206,6 +206,10 @@ const router = new VueRouter({
         {
             path: '/scroll',
             component: (resolve) => require(['./routers/scroll.vue'], resolve)
+        },
+        {
+            path: '/timePicker',
+            component: (resolve) => require(['./routers/timePicker.vue'], resolve)
         }
     ]
 });
