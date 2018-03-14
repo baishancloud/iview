@@ -41,10 +41,7 @@
 </template>
 <script>
     export default {
-<<<<<<< HEAD
 
-    }
-=======
         data () {
             return {
                 theme1: 'dark',
@@ -61,21 +58,6 @@
                 // console.log(openArr);
                 return openArr;
             }
-<<<<<<< HEAD
         }
     };
-=======
-        };
-    },
-    computed:{
-        toggleTop () {
-            return this.$el ?  `${(this.$el.clientHeight / 2)}px` : '400px';
-        }
-    },
-    created () {
-        console.log(this.$el);
-    }
-}
->>>>>>> nimi menu bugfix
->>>>>>> nimi menu bugfix
 </script>
