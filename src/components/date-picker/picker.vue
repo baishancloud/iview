@@ -17,7 +17,6 @@
                     @on-blur="handleBlur"
                     @on-click="handleIconClick"
                     @mouseenter.native="handleInputMouseenter"
-                    @mouseleave.native="handleInputMouseleave"
 
                     :icon="iconType"
                 ></i-input>
