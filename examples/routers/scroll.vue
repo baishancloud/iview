@@ -50,7 +50,7 @@
         margin: 0 auto;
     }
 
-    .ivu-scroll-container {
+    .bsc-scroll-container {
         height: 500px;
     }
 </style>

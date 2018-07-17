@@ -15,7 +15,7 @@ describe('Message.vue', () => {
       duration: 200 // too long so we can test
     });
 
-    const selector = '.ivu-message-notice-content-text .ivu-message-info';
+    const selector = '.bsc-message-notice-content-text .bsc-message-info';
     const checkMessageOpens = () => (messageContainer = document.querySelector(selector));
 
     waitForIt(checkMessageOpens, function() {
@@ -32,7 +32,7 @@ describe('Message.vue', () => {
       return tests.concat({
         type: type,
         message: testMessage(type),
-        class: 'ivu-message-' + type
+        class: 'bsc-message-' + type
       });
     }, []);
     let domElements = [];
@@ -45,7 +45,7 @@ describe('Message.vue', () => {
     }
 
     const checkAllMessageOpens = () => {
-      domElements = document.querySelectorAll('.ivu-message-custom-content');
+      domElements = document.querySelectorAll('.bsc-message-custom-content');
       return domElements.length == tests.length && domElements;
     };
 

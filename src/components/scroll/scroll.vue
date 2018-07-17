@@ -26,7 +26,7 @@
     import { on, off } from '../../utils/dom';
     import Locale from '../../mixins/locale';
 
-    const prefixCls = 'ivu-scroll';
+    const prefixCls = 'bsc-scroll';
     const dragConfig = {
         sensitivity: 10,
         minimumStartDragOffset: 5, // minimum start drag offset

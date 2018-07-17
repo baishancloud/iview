@@ -11,7 +11,7 @@
 </template>
 
 <script>
-const prefixCls = 'ivu-scroll';
+const prefixCls = 'bsc-scroll';
 
 export default {
     props: ['text', 'active', 'spinnerHeight'],

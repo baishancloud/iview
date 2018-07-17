@@ -1,2 +1,2 @@
 
-export default 'ivu-date-picker-cells';
+export default 'bsc-date-picker-cells';

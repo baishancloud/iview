@@ -2,7 +2,7 @@
      <div :class="wrapClasses"><slot></slot></div>
 </template>
 <script>
-    const prefixCls = 'ivu-layout';
+    const prefixCls = 'bsc-layout';
 
     export default {
         name: 'Layout',

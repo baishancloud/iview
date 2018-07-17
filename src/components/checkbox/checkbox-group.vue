@@ -35,7 +35,7 @@
                 return [
                     `${prefixCls}`,
                     {
-                        [`ivu-checkbox-${this.size}`]: !!this.size
+                        [`bsc-checkbox-${this.size}`]: !!this.size
                     }
                 ];
             }

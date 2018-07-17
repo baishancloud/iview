@@ -52,7 +52,7 @@
                     `${prefixCls}`,
                     {
                         [`${prefixCls}-${this.size}`]: !!this.size,
-                        [`ivu-radio-${this.size}`]: !!this.size,
+                        [`bsc-radio-${this.size}`]: !!this.size,
                         [`${prefixCls}-${this.type}`]: !!this.type,
                         [`${prefixCls}-vertical`]: this.vertical
                     }

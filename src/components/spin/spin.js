@@ -27,7 +27,7 @@ Spin.newInstance = properties => {
                 });
             }
             return h('div', {
-                'class': 'ivu-spin-fullscreen ivu-spin-fullscreen-wrapper'
+                'class': 'bsc-spin-fullscreen bsc-spin-fullscreen-wrapper'
             }, [vnode]);
         }
     });
@@ -44,7 +44,7 @@ Spin.newInstance = properties => {
             spin.visible = false;
             setTimeout(function() {
                 spin.$parent.$destroy();
-                document.body.removeChild(document.getElementsByClassName('ivu-spin-fullscreen')[0]);
+                document.body.removeChild(document.getElementsByClassName('bsc-spin-fullscreen')[0]);
                 cb();
             }, 500);
         },

@@ -23,7 +23,7 @@ describe('Select.vue', () => {
         }
       });
       vm.$nextTick(() => {
-        const placeholderSpan = vm.$el.querySelector('.ivu-select-placeholder');
+        const placeholderSpan = vm.$el.querySelector('.bsc-select-placeholder');
         expect(placeholderSpan.textContent).to.equal(placeholder);
         expect(placeholderSpan.style.display).to.not.equal('none');
 
@@ -47,7 +47,7 @@ describe('Select.vue', () => {
         }
       });
       vm.$nextTick(() => {
-        const selectedValueSpan = vm.$el.querySelector('.ivu-select-selected-value');
+        const selectedValueSpan = vm.$el.querySelector('.bsc-select-selected-value');
         expect(selectedValueSpan.textContent).to.equal('Bar');
         expect(selectedValueSpan.style.display).to.not.equal('none');
         expect(vm.$children[0].selectedSingle).to.equal('Bar');
@@ -71,7 +71,7 @@ describe('Select.vue', () => {
         }
       });
       vm.$nextTick(() => {
-        const selectedValueSpan = vm.$el.querySelector('.ivu-select-selected-value');
+        const selectedValueSpan = vm.$el.querySelector('.bsc-select-selected-value');
         expect(selectedValueSpan.textContent).to.equal('< 100$');
         done();
       });
@@ -92,7 +92,7 @@ describe('Select.vue', () => {
         }
       });
       vm.$nextTick(() => {
-        const input = vm.$el.querySelector('.ivu-select-input');
+        const input = vm.$el.querySelector('.bsc-select-input');
         expect(input.value).to.equal('< 100$');
         done();
       });
@@ -113,8 +113,8 @@ describe('Select.vue', () => {
         }
       });
       vm.$nextTick(() => {
-        const placeholderSpan = vm.$el.querySelector('.ivu-select-placeholder');
-        const selectedValueSpan = vm.$el.querySelector('.ivu-select-selected-value');
+        const placeholderSpan = vm.$el.querySelector('.bsc-select-placeholder');
+        const selectedValueSpan = vm.$el.querySelector('.bsc-select-selected-value');
         expect(placeholderSpan.style.display).to.equal('none');
         expect(selectedValueSpan.style.display).to.not.equal('none');
         done();
@@ -130,10 +130,10 @@ describe('Select.vue', () => {
         </div>
 	  `);
       vm.$nextTick(() => {
-        const [defaultSelect, largeSelect, smallSelect] = [...vm.$el.querySelectorAll('.ivu-select')];
-        expect(defaultSelect.className).to.equal('ivu-select ivu-select-single');
-        expect(largeSelect.classList.contains('ivu-select-large')).to.equal(true);
-        expect(smallSelect.classList.contains('ivu-select-small')).to.equal(true);
+        const [defaultSelect, largeSelect, smallSelect] = [...vm.$el.querySelectorAll('.bsc-select')];
+        expect(defaultSelect.className).to.equal('bsc-select bsc-select-single');
+        expect(largeSelect.classList.contains('bsc-select-large')).to.equal(true);
+        expect(smallSelect.classList.contains('bsc-select-small')).to.equal(true);
         done();
       });
     });
@@ -164,7 +164,7 @@ describe('Select.vue', () => {
         if (vm.$children[0].options == 0) return setTimeout(waitForIt.bind(null, done), 50);
         expect(JSON.stringify(vm.$children[0].options)).to.equal(JSON.stringify(laterOptions));
 
-        const renderedOptions = vm.$el.querySelectorAll('.ivu-select-dropdown-list li');
+        const renderedOptions = vm.$el.querySelectorAll('.bsc-select-dropdown-list li');
         expect(renderedOptions.length).to.equal(laterOptions.length);
 
         const labels = [...renderedOptions].map(el => el.textContent).join('<>');
@@ -212,15 +212,15 @@ describe('Select.vue', () => {
 
       new Promise(resolve => {
         const condition = function() {
-          const optionsA = SelectA.$el.querySelectorAll('.ivu-select-item');
-          const optionsB = SelectB.$el.querySelectorAll('.ivu-select-item');
+          const optionsA = SelectA.$el.querySelectorAll('.bsc-select-item');
+          const optionsB = SelectB.$el.querySelectorAll('.bsc-select-item');
           return optionsA.length > 0 && optionsB.length > 0;
         };
         waitForIt(condition, resolve);
       })
         .then(() => {
           // click in A options
-          const optionsA = SelectA.$el.querySelectorAll('.ivu-select-item');
+          const optionsA = SelectA.$el.querySelectorAll('.bsc-select-item');
           optionsA[0].click();
           return promissedTick(SelectA);
         })
@@ -230,7 +230,7 @@ describe('Select.vue', () => {
           expect(SelectB.value.length).to.equal(0);
 
           // click in B options
-          const optionsB = SelectB.$el.querySelectorAll('.ivu-select-item');
+          const optionsB = SelectB.$el.querySelectorAll('.bsc-select-item');
           optionsB[1].click();
           optionsB[2].click();
           return promissedTick(SelectB);
@@ -238,7 +238,7 @@ describe('Select.vue', () => {
         .then(() => {
           // lets check the values!
           const getSelections = component => {
-            const tags = component.$el.querySelectorAll('.ivu-select-selection .ivu-tag');
+            const tags = component.$el.querySelectorAll('.bsc-select-selection .bsc-tag');
             return [...tags].map(el => el.textContent.trim()).join(',');
           };
           const selectAValue = getSelections(SelectA);
@@ -282,7 +282,7 @@ describe('Select.vue', () => {
       };
       const callback = function() {
         const end = +new Date();
-        const renderedOptions = vm.$el.querySelectorAll('.ivu-select-dropdown-list li');
+        const renderedOptions = vm.$el.querySelectorAll('.bsc-select-dropdown-list li');
         expect(renderedOptions.length).to.equal(manyLaterOptions.length);
         expect(end - start).to.be.not.above(1000);
         done();

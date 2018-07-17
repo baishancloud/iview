@@ -11,7 +11,7 @@ describe('DatePicker.vue', () => {
       <Date-Picker></Date-Picker>
     `);
     const picker = vm.$children[0];
-    picker.$el.querySelector('input.ivu-input').focus();
+    picker.$el.querySelector('input.bsc-input').focus();
     vm.$nextTick(() => {
       const calendarBody = vm.$el.querySelector('.bsc-picker-panel-body .bsc-date-picker-cells:first-of-type');
       const calendarCells = [...calendarBody.querySelectorAll('.bsc-date-picker-cells-cell')].filter(el => {
@@ -118,9 +118,9 @@ describe('DatePicker.vue', () => {
     const picker = vm.$children[0];
     picker.handleIconClick();
     vm.$nextTick(() => {
-      const displayField = vm.$el.querySelector('.ivu-input');
-      const clickableCells = vm.$el.querySelectorAll('.ivu-date-picker-cells-cell');
-      const lastMonthClass = 'ivu-date-picker-cells-cell-prev-month';
+      const displayField = vm.$el.querySelector('.bsc-input');
+      const clickableCells = vm.$el.querySelectorAll('.bsc-date-picker-cells-cell');
+      const lastMonthClass = 'bsc-date-picker-cells-cell-prev-month';
       const firstDayInMonthIndex = [...clickableCells].findIndex(cell => !cell.classList.contains(lastMonthClass));
 
       clickableCells[firstDayInMonthIndex].firstElementChild.click();
@@ -171,10 +171,10 @@ describe('DatePicker.vue', () => {
     const picker = vm.$children[0];
     picker.handleIconClick();
     vm.$nextTick(() => {
-      const panel = vm.$el.querySelector('.ivu-picker-panel-content');
-      const dayPanel = panel.querySelector('[class="ivu-date-picker-cells"]');
-      const monthPanel = panel.querySelector('.ivu-date-picker-cells-month');
-      const yearPanel = panel.querySelector('.ivu-date-picker-cells-year');
+      const panel = vm.$el.querySelector('.bsc-picker-panel-content');
+      const dayPanel = panel.querySelector('[class="bsc-date-picker-cells"]');
+      const monthPanel = panel.querySelector('.bsc-date-picker-cells-month');
+      const yearPanel = panel.querySelector('.bsc-date-picker-cells-year');
 
       expect(dayPanel).to.equal(null);
       expect(monthPanel.style.display).to.equal('');
@@ -186,8 +186,8 @@ describe('DatePicker.vue', () => {
       vm.dateType = 'year';
       promissedTick(picker)
         .then(() => {
-          const yearPanel = panel.querySelector('.ivu-date-picker-cells-year');
-          const monthPanel = panel.querySelector('.ivu-date-picker-cells-month');
+          const yearPanel = panel.querySelector('.bsc-date-picker-cells-year');
+          const monthPanel = panel.querySelector('.bsc-date-picker-cells-month');
           expect(yearPanel.style.display).to.equal('');
           expect(monthPanel).to.equal(null);
 
@@ -224,7 +224,7 @@ describe('DatePicker.vue', () => {
 
     vm.$nextTick(() => {
       const picker = vm.$children[0];
-      const displayField = vm.$el.querySelector('.ivu-input');
+      const displayField = vm.$el.querySelector('.bsc-input');
       expect(displayField.value).to.equal(nowDate);
 
       picker.showClose = true; // to simulate mouseenter in the Input
@@ -245,9 +245,9 @@ describe('DatePicker.vue', () => {
     const picker = vm.$children[0];
     picker.handleIconClick();
     vm.$nextTick(() => {
-      const displayField = vm.$el.querySelector('.ivu-input');
-      const clickableCells = vm.$el.querySelectorAll('.ivu-date-picker-cells-cell');
-      const lastMonthClass = 'ivu-date-picker-cells-cell-prev-month';
+      const displayField = vm.$el.querySelector('.bsc-input');
+      const clickableCells = vm.$el.querySelectorAll('.bsc-date-picker-cells-cell');
+      const lastMonthClass = 'bsc-date-picker-cells-cell-prev-month';
       const firstDayInMonthIndex = [...clickableCells].findIndex(cell => !cell.classList.contains(lastMonthClass));
 
       // choose first date
@@ -358,7 +358,7 @@ describe('DatePicker.vue', () => {
     picker.handleIconClick();
     vm.$nextTick(() => {
       const now = new Date();
-      const labels = vm.$el.querySelectorAll('.ivu-picker-panel-body .ivu-date-picker-header-label');
+      const labels = vm.$el.querySelectorAll('.bsc-picker-panel-body .bsc-date-picker-header-label');
       const labelText = [...labels].map(el => el.textContent).join(' ');
       expect(labelText).to.equal([now.getFullYear() + '年', now.getMonth() + 1 + '月'].join(' '));
       done();
